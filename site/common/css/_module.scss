@@ -1,0 +1,82 @@
+// COLOR
+
+$color--black: #000000;
+$color--white: #ffffff;
+$color--navy: #0f2540;
+$color--gray: #f7f7f7;
+$color--gray--02: #dddddd;
+$color--gray--03: #999999;
+$color--gray--04: #eeeeee;
+$color--gray--05: #cccccc;
+$color--red: #cb1b45;
+
+// MODULE
+
+/* mod-: MODULE */
+
+.mod-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background: $color--white;
+    box-shadow: 0 2px $color--gray--02;
+}
+.mod-header__logo {
+    display: inline-block;
+    margin-top: 8px;
+    a {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $color--navy;
+    }
+}
+.mod-header__language {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    a {
+        font-size: 1.1rem;
+        color: $color--navy;
+    }
+}
+.mod-pankuzuContent {
+    padding-top: 20px;
+}
+.mod-pankuzu {
+    li {
+        display: inline-block;
+    }
+    .mod-pankuzu__link {
+        font-size: 1.1rem;
+        vertical-align: middle;
+        &:hover {
+            color: $color--gray--05;
+        }
+    }
+}
+.mod-pankuzu__text {
+    color: $color--gray--05;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+.mod-pankuzu__icon {
+    vertical-align: middle;
+    font-size: 1.1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#mod-footer {
+    width: 100%;
+    background: $color--gray;
+    padding: 15px;
+    text-align: center;
+}
+.mod-footer__copyright {
+    font-size: 1.1rem;
+    font-weight: bold;
+}

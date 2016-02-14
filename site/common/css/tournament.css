@@ -1,0 +1,384 @@
+html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt, dd, section, article, header, footer, main, small, select, a, a:link, a:hover, a:visited, a:active, a:focus, button {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  font-weight: normal;
+  color: #000000;
+  list-style-type: none;
+  letter-spacing: 1px;
+  text-decoration: none; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 730px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 730px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 730px; } }
+
+/* mod-: MODULE */
+.mod-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 2px #dddddd;
+  z-index: 1; }
+
+.mod-header__logo {
+  display: inline-block;
+  margin-top: 8px; }
+  .mod-header__logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0f2540; }
+
+.mod-header__language {
+  position: absolute;
+  top: 12px;
+  right: 30px; }
+  .mod-header__language a {
+    font-size: 1.1rem;
+    color: #0f2540; }
+
+#mod-footer {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 15px;
+  text-align: center; }
+
+.mod-footer__copyright {
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+.mod-pankuzuContent {
+  padding-top: 20px; }
+
+.mod-pankuzu li {
+  float: left; }
+.mod-pankuzu .mod-pankuzu__link {
+  font-size: 1.1rem;
+  vertical-align: middle; }
+  .mod-pankuzu .mod-pankuzu__link:hover {
+    color: #cccccc; }
+
+.mod-pankuzu__text {
+  color: #cccccc;
+  font-size: 1.1rem;
+  vertical-align: middle; }
+
+.mod-pankuzu__icon {
+  vertical-align: middle;
+  font-size: 1.1rem;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left; }
+
+#mod-resultTableContent,
+#mod-resultTableContent--02,
+#mod-resultTableContent--03,
+#mod-resultTableContent--04,
+#mod-resultTableContent--05 {
+  border-top: 1px dotted #dddddd; }
+
+.mod-resultTable {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #cccccc; }
+  .mod-resultTable tr:last-child .mod-resultTable__player,
+  .mod-resultTable tr:last-child .mod-resultTable__point,
+  .mod-resultTable tr:last-child .mod-resultTable__judge {
+    border-bottom: none; }
+
+.mod-resultTable__player {
+  background: #f7f7f7;
+  min-width: 200px;
+  padding: 10px;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; }
+
+.mod-resultTable__player__red {
+  width: 10px;
+  height: 30px;
+  background: #cb1b45;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.mod-resultTable__player__white {
+  width: 10px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.mod-resultTable__player__name {
+  font-size: 1.1rem; }
+
+.mod-resultTable__point {
+  min-width: 50px;
+  padding: 10px;
+  border-right: 1px dotted #cccccc;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #cccccc; }
+
+.mod-resultTable__point--last {
+  border-right: none; }
+
+.mod-resultTable__judge {
+  min-width: 50px;
+  background: #f7f7f7;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  padding: 10px; }
+
+.mod-resultTable__judge__mark--red {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #cb1b45;
+  display: inline-block;
+  vertical-align: middle; }
+
+.mod-resultTable__judge__mark--white {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #cccccc; }
+
+.mod-resultTable--all {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #cccccc; }
+
+.mod-resultTable--all__team {
+  min-width: 200px;
+  height: 60px;
+  padding: 10px;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  position: relative; }
+
+.mod-resultTable--all__team__red {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10px;
+  height: 40px;
+  background: #cb1b45;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.mod-resultTable--all__team__white {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  display: inline-block; }
+
+.mod-resultTable--all__team__name {
+  font-size: 1.3rem; }
+
+.mod-resultTable--all__result {
+  min-width: 200px;
+  height: 60px;
+  padding: 10px;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+  position: relative; }
+
+.mod-resultTable--all__result__num {
+  font-size: 1.8rem; }
+
+.mod-resultTable--all__result__mark--red {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #cb1b45;
+  display: inline-block;
+  vertical-align: middle; }
+
+.mod-resultTable--all__player {
+  min-width: 150px;
+  height: 50px;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 10px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #cccccc; }
+
+.mod-resultTable--all__point {
+  min-width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #cccccc; }
+
+.mod-resultTable--all__judge {
+  min-width: 50px;
+  height: 50px;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #cccccc; }
+
+.mod-resultTable--all__player--left {
+  border-right: 1px solid #cccccc; }
+
+.mod-resultTable--all__player--right {
+  border-left: 1px solid #cccccc; }
+
+.mod-resultTable--all__point--left {
+  border-right: 1px dotted #cccccc; }
+
+.mod-resultTable--all__point--right {
+  border-left: 1px dotted #cccccc; }
+
+.mod-resultTable--all__judge--left {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc; }
+
+.mod-resultTable--all__judge--right {
+  border-right: 1px solid #cccccc; }
+
+.mod-resultTable--all__judge__mark--red {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #cb1b45;
+  display: inline-block;
+  vertical-align: middle; }
+
+.mod-resultTable--all__judge__mark--white {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #cccccc; }
+
+.tournament-keyvidual {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #0f2540;
+  z-index: -1; }
+
+.tournament-keyvidual__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; }
+
+.tournament-keyvidual__title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold; }
+
+.tournament-keyvidual__title__times {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px; }
+
+.tournament-keyvidual__info {
+  margin-top: 30px;
+  display: inline-block; }
+
+.tournament-keyvidual__date {
+  float: left;
+  margin-right: 40px; }
+
+.tournament-keyvidual__date__icon {
+  color: #ffffff;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.tournament-keyvidual__date__text {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: bold;
+  vertical-align: middle; }
+
+.tournament-keyvidual__place {
+  float: left; }
+
+.tournament-keyvidual__place__icon {
+  color: #ffffff;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.tournament-keyvidual__place__text {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: bold;
+  vertical-align: middle; }
+
+.tournament-nav {
+  margin-top: 30px; }
+
+.tournament-nav__content {
+  position: relative;
+  text-align: center;
+  height: 25px; }
+
+.tournament-nav__list {
+  display: inline-block;
+  margin-top: 6px; }
+  .tournament-nav__list li {
+    float: left;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1; }
+    .tournament-nav__list li:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: #000000;
+      top: 0;
+      right: 0; }
+    .tournament-nav__list li:last-child:after {
+      content: none; }
+  .tournament-nav__list a {
+    font-size: 1.3rem;
+    color: #000000; }
+    .tournament-nav__list a:hover {
+      color: #cccccc; }

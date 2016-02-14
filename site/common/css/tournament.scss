@@ -1,0 +1,101 @@
+@import '_style.scss';
+
+.tournament-keyvidual {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: $color--navy;
+    z-index: -1;
+}
+.tournament-keyvidual__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.tournament-keyvidual__title {
+    color: $color--white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.tournament-keyvidual__title__times {
+    color: $color--white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+.tournament-keyvidual__info {
+    margin-top: 30px;
+    display: inline-block;
+}
+.tournament-keyvidual__date {
+    float: left;
+    margin-right: 40px;
+}
+.tournament-keyvidual__date__icon {
+    color: $color--white;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.tournament-keyvidual__date__text {
+    font-size: 1.3rem;
+    color: $color--white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.tournament-keyvidual__place {
+    float: left;
+}
+.tournament-keyvidual__place__icon {
+    color: $color--white;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.tournament-keyvidual__place__text {
+    font-size: 1.3rem;
+    color: $color--white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.tournament-nav {
+    margin-top: 30px;
+}
+.tournament-nav__content {
+    position: relative;
+    text-align: center;
+    height: 25px;
+}
+.tournament-nav__list {
+    display: inline-block;
+    margin-top: 6px;
+    li {
+        float: left;
+        position: relative;
+        padding-left: 25px;
+        padding-right: 25px;
+        line-height: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: $color--black;
+            top: 0;
+            right: 0;
+        }
+        &:last-child:after {
+            content: none;
+        }
+    }
+    a {
+        font-size: 1.3rem;
+        color: $color--black;
+        &:hover {
+            color: $color--gray--05;
+        }
+    }
+}

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="/common/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/common/css/style.css" rel="stylesheet">
+    <link href="/common/css/play.css" rel="stylesheet">
     <!-- /style -->
 
 </head>
@@ -20,14 +20,14 @@
         <div class="mod-header__language"><a href="#">日本語／ENGLISH</a></div>
     </header>
 
-    <section class="playIndividual-keyvidual">
-        <h1 class="playIndividual-keyvidual__title">第16回　世界剣道選手権大会</h1>
+    <section class="play-keyvidual">
+        <h1 class="play-keyvidual__title">第16回　世界剣道選手権大会</h1>
     </section>
 
-    <main class="playIndividual-main">
+    <main class="play-main">
 
         <div class="mod-pankuzuContent container">
-            <ul class="mod-pankuzu">
+            <ul class="mod-pankuzu clearfix">
                 <li><a class="mod-pankuzu__link" href="#">トップページ</a></li>
                 <i class="mod-pankuzu__icon material-icons">keyboard_arrow_right</i>
                 <li><a class="mod-pankuzu__link" href="#">大会ページ</a></li>
@@ -36,24 +36,52 @@
             </ul>
         </div>
 
-        <section class="playIndividual-video container">
-            <div class="playIndividual-video__content">
-                <div class="playIndividual-video__title">
-                    <div class="playIndividual-video__title__player">
-                        <span class="playIndividual-video__title__red"></span>
-                        <span class="playIndividual-video__title__name">山田太郎 (神奈川県警)</span>
+        <section class="play-video container">
+            <div class="play-video__content">
+                <div class="play-video__title">
+                    <div class="play-video__title__player">
+                        <span class="play-video__title__red"></span>
+                        <span class="play-video__title__name">山田太郎 (神奈川県警)</span>
                     </div>
-                    <i class="playIndividual-video__title__icon material-icons">close</i>
-                    <div class="playIndividual-video__title__player">
-                        <span class="playIndividual-video__title__white"></span>
-                        <span class="playIndividual-video__title__name">山田太郎 (神奈川県警)</span>
+                    <i class="play-video__title__icon material-icons">close</i>
+                    <div class="play-video__title__player">
+                        <span class="play-video__title__white"></span>
+                        <span class="play-video__title__name">山田太郎 (神奈川県警)</span>
                     </div>
                 </div>
-                <div class="playIndividual-video__video">
+                <div class="play-video__video">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/PI4W4T_gU08?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="playIndividual-video__result">
-                    <a href="#">試合結果</a>
+                <div class="play-video__result">
+                    <a class="#" role="button" data-toggle="collapse" href="#mod-resultTableContent" aria-expanded="true" aria-controls="mod-resultTableContent">
+                        <span class="play-video__result__text">試合結果</span>
+                    </a>
+                    <div class="collapse fade" id="mod-resultTableContent">
+                        <table class="mod-resultTable">
+                            <tr>
+                                <th class="mod-resultTable__player">
+                                    <span class="mod-resultTable__player__red"></span>
+                                    <span class="mod-resultTable__player__name">山田太郎 (神奈川県警)</span>
+                                </th>
+                                <td class="mod-resultTable__point">面</td>
+                                <td class="mod-resultTable__point"></td>
+                                <td class="mod-resultTable__point mod-resultTable__point--last">小手</td>
+                                <td class="mod-resultTable__judge">
+                                    <span class="mod-resultTable__judge__mark--red"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="mod-resultTable__player">
+                                    <span class="mod-resultTable__player__white"></span>
+                                    <span class="mod-resultTable__player__name">山田太郎 (神奈川県警)</span>
+                                </th>
+                                <td class="mod-resultTable__point"></td>
+                                <td class="mod-resultTable__point">胴</td>
+                                <td class="mod-resultTable__point mod-resultTable__point--last"></td>
+                                <td class="mod-resultTable__judge"></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>

@@ -27,7 +27,7 @@ $color--red: #cb1b45;
     text-align: center;
     background: $color--white;
     box-shadow: 0 2px $color--gray--02;
-    z-index: 1;
+    z-index: 10;
 }
 .mod-header__logo {
     display: inline-block;

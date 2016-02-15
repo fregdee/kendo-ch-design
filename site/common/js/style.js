@@ -2,7 +2,7 @@
 
 $(function(){
    // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#play-video__content]').click(function() {
+   $('a[href^=#play-video__content], a[href^=#tournament-table__content]').click(function() {
       // スクロールの速度
       var speed = 400; // ミリ秒
       // アンカーの値取得

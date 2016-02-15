@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="/common/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/common/plugins/AnimateTransition/css/transitions.css" rel="stylesheet"/>
     <link href="/common/css/tournament.css" rel="stylesheet">
     <!-- /style -->
 
@@ -57,17 +58,575 @@
                         <li><a href="#tournament-table__content--03">男子個人</a></li>
                         <li><a href="#tournament-table__content--04">女子個人</a></li>
                     </ul>
-                    <!-- <div class="tournament-nav__caution clearfix">
+                    <div class="tournament-nav__caution clearfix">
                         <span class="tournament-nav__caution__mark"></span>
-                        <span class="tournament-nav__caution__mark--02"></span>
+                        <span class="tournament-nav__caution__mark--02">=</span>
                         <span class="tournament-nav__caution__text">試合動画</span>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- tournament -->
-            <div class=""></div>
-            <!-- /tournament -->
+            <div id="tournament-table__content--01" class="tournament-table__content">
+                <div class="tournament-table__button"><a class="" href="#">試合結果</a></div>
+                <div class="tournament-tableContent clearfix">
+                    <table class="tournament-table__num">
+                        <tr><td class="">
+                            <span>1</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>2</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>3</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>4</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>5</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>6</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>7</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>8</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>9</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>10</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>11</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>12</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>13</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>14</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>15</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>16</span>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__name">
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                    </table>
+                    <table class="tournament-table__round--01">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--02">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--03">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03.png" alt="round--03">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03.png" alt="round--03">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--04">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--04.png" alt="round--04">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--05">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--05.png" alt="round--05">
+                        </td></tr>
+                    </table>
+                </div>
+                <!-- <div class="tournament-tableContent tournament-tableContent--result clearfix">
+                    <table class="tournament-table__num">
+                        <tr><td class="">
+                            <span>1</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>2</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>3</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>4</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>5</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>6</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>7</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>8</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>9</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>10</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>11</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>12</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>13</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>14</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>15</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>16</span>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__name">
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                    </table>
+                    <table class="tournament-table__round--01">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--02">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--03">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03--top.png" alt="round--03">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03--top.png" alt="round--03">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--04">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--04--top.png" alt="round--04">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--05">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--05--result.png" alt="round--05">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--result">
+                        <tr><td class="">
+                            <span class="tournament-table__round--result__tag">優勝</span>
+                            <span class="tournament-table__round--result__text">山田太郎（神奈川県警）</span>
+                        </td></tr>
+                    </table>
+                </div> -->
+            </div>
+
+            <div id="tournament-table__content--02" class="tournament-table__content">
+                <div class="tournament-table__button"><a class="" href="#">試合結果</a></div>
+                <!-- <div class="tournament-tableContent clearfix">
+                    <table class="tournament-table__num">
+                        <tr><td class="">
+                            <span>1</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>2</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>3</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>4</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>5</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>6</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>7</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>8</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>9</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>10</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>11</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>12</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>13</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>14</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>15</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>16</span>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__name">
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                    </table>
+                    <table class="tournament-table__round--01">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01.png" alt="round--01">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--02">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02.png" alt="round--02">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--03">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03.png" alt="round--03">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03.png" alt="round--03">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--04">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--04.png" alt="round--04">
+                            <a class="tournament-table__play" href="/play/play--team.html"></a>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--05">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--05.png" alt="round--05">
+                        </td></tr>
+                    </table>
+                </div> -->
+                <div class="tournament-tableContent tournament-tableContent--result clearfix">
+                    <table class="tournament-table__num">
+                        <tr><td class="">
+                            <span>1</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>2</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>3</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>4</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>5</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>6</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>7</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>8</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>9</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>10</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>11</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>12</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>13</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>14</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>15</span>
+                        </td></tr>
+                        <tr><td class="">
+                            <span>16</span>
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__name">
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                        <tr><td class="">山田太郎（神奈川県警）</td></tr>
+                    </table>
+                    <table class="tournament-table__round--01">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--01--top.png" alt="round--01">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--02">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--02--top.png" alt="round--02">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--03">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03--top.png" alt="round--03">
+                        </td></tr>
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--03--top.png" alt="round--03">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--04">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--04--top.png" alt="round--04">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--05">
+                        <tr><td class="">
+                            <img class="" src="/common/images/tournament/bracket--05--result.png" alt="round--05">
+                        </td></tr>
+                    </table>
+                    <table class="tournament-table__round--result">
+                        <tr><td class="">
+                            <span class="tournament-table__round--result__tag">優勝</span>
+                            <span class="tournament-table__round--result__text">山田太郎（神奈川県警）</span>
+                        </td></tr>
+                    </table>
+                </div>
+            </div>
 
         </section>
 
@@ -80,6 +639,7 @@
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/common/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script src="/common/plugins/AnimateTransition/src/animateTransition.min.js"></script>
     <script src="/common/js/style.js"></script>
     <!-- /script -->
 

@@ -28,9 +28,11 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0 2px #dddddd;
-  z-index: 10; }
+  z-index: 100;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
 
 .mod-header__logo {
   display: inline-block;
@@ -38,7 +40,9 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   .mod-header__logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #0f2540; }
+    color: #0f2540;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
 
 .mod-header__language {
   position: absolute;
@@ -46,7 +50,22 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   right: 30px; }
   .mod-header__language a {
     font-size: 1.1rem;
-    color: #0f2540; }
+    color: #0f2540;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
+
+.mod-header--fixed {
+  background-color: #0f2540;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
+  .mod-header--fixed .mod-header__logo a {
+    color: #ffffff;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
+  .mod-header--fixed .mod-header__language a {
+    color: #ffffff;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
 
 #mod-footer {
   width: 100%;
@@ -86,7 +105,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
 #mod-resultTableContent--02,
 #mod-resultTableContent--03,
 #mod-resultTableContent--04,
-#mod-resultTableContent--05 {
+#mod-resultTableContent--05,
+#mod-resultTableContent--result {
   border-top: 1px dotted #dddddd; }
 
 .mod-resultTable {
@@ -288,6 +308,40 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   display: inline-block;
   vertical-align: middle;
   border: 1px solid #cccccc; }
+
+.scrollNav.scrollNav--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  margin-top: 0;
+  background: #f7f7f7;
+  z-index: 10; }
+  .scrollNav.scrollNav--fixed .scrollNav__content {
+    margin-top: 16px;
+    margin-left: 30px;
+    margin-right: 30px; }
+
+.nav-tabs {
+  border: 0; }
+  .nav-tabs > li > a {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    border: none;
+    background: none; }
+    .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+      background: none;
+      outline: none; }
+  .nav-tabs > li.active a,
+  .nav-tabs > li.active a:focus,
+  .nav-tabs > li.active a:hover {
+    cursor: pointer;
+    border: none;
+    color: #cccccc;
+    background: none;
+    border: none; }
 
 /* top-: TOP */
 .top-keyvisual {

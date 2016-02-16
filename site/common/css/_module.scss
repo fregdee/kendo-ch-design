@@ -25,9 +25,11 @@ $color--red: #cb1b45;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background: $color--white;
+    background-color: $color--white;
     box-shadow: 0 2px $color--gray--02;
-    z-index: 10;
+    z-index: 100;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
 }
 .mod-header__logo {
     display: inline-block;
@@ -36,6 +38,8 @@ $color--red: #cb1b45;
         font-size: 1.8rem;
         font-weight: bold;
         color: $color--navy;
+        -webkit-transition: color .3s;
+        transition: color .3s;
     }
 }
 .mod-header__language {
@@ -45,6 +49,27 @@ $color--red: #cb1b45;
     a {
         font-size: 1.1rem;
         color: $color--navy;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+    }
+}
+.mod-header--fixed {
+    background-color: $color--navy;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    .mod-header__logo {
+        a {
+            color: $color--white;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+        }
+    }
+    .mod-header__language {
+        a {
+            color: $color--white;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+        }
     }
 }
 
@@ -99,7 +124,8 @@ $color--red: #cb1b45;
 #mod-resultTableContent--02,
 #mod-resultTableContent--03,
 #mod-resultTableContent--04,
-#mod-resultTableContent--05 {
+#mod-resultTableContent--05,
+#mod-resultTableContent--result {
     border-top: 1px dotted $color--gray--02;
 }
 .mod-resultTable {

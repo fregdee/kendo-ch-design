@@ -61,7 +61,10 @@
     font-weight: bold;
     vertical-align: middle;
 }
-.tournament-nav {
+.tournament-navArea {
+    width: 100%;
+    height: 25px;
+    display: block;
     margin-top: 30px;
 }
 .tournament-nav__content {
@@ -124,16 +127,18 @@
     font-size: 1.1rem;
     vertical-align: middle;
 }
+.tournament-tableArea {
+    padding-bottom: 120px;
+}
 .tournament-table {
     padding-top: 30px;
-    padding-bottom: 120px;
 }
 .tournament-table__content {
     position: relative;
     text-align: center;
     border: 1px solid $color--gray--02;
     box-shadow: 0 2px $color--gray--02;
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 60px 30px;
 }
 .tournament-table__round--01,
@@ -160,8 +165,12 @@
         background: $color--gray;
     }
 }
-.tournament-tableContent {
+.tournament-tableContentArea {
+    line-height: 0;
     display: inline-block;
+}
+.tournament-tableContent--result {
+    display: none;
 }
 .tournament-table__num,
 .tournament-table__name,
@@ -225,18 +234,21 @@
 }
 .tournament-table__round--result {
     td {
+        width: 200px;
         height: 480px;
+        line-height: 2;
     }
 }
 .tournament-table__round--result__tag {
     display: inline-block;
-    padding: 2px 10px;
+    padding: 5px 10px;
     font-size: 1.1rem;
     background: $color--red;
     color: $color--white;
     border-radius: 2px;
     margin-left: 10px;
     margin-right: 5px;
+    line-height: 1;
 }
 .tournament-table__round--result__text {
     font-size: 1.1rem;
@@ -246,6 +258,7 @@
     bottom: 30px;
     right: 30px;
     a {
+        cursor: pointer;
         display: inline-block;
         padding: 5px 30px;
         border: 1px solid $color--gray--05;

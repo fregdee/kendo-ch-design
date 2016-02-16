@@ -28,9 +28,11 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0 2px #dddddd;
-  z-index: 10; }
+  z-index: 100;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
 
 .mod-header__logo {
   display: inline-block;
@@ -38,7 +40,9 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   .mod-header__logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #0f2540; }
+    color: #0f2540;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
 
 .mod-header__language {
   position: absolute;
@@ -46,7 +50,22 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   right: 30px; }
   .mod-header__language a {
     font-size: 1.1rem;
-    color: #0f2540; }
+    color: #0f2540;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
+
+.mod-header--fixed {
+  background-color: #0f2540;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
+  .mod-header--fixed .mod-header__logo a {
+    color: #ffffff;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
+  .mod-header--fixed .mod-header__language a {
+    color: #ffffff;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
 
 #mod-footer {
   width: 100%;
@@ -86,7 +105,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
 #mod-resultTableContent--02,
 #mod-resultTableContent--03,
 #mod-resultTableContent--04,
-#mod-resultTableContent--05 {
+#mod-resultTableContent--05,
+#mod-resultTableContent--result {
   border-top: 1px dotted #dddddd; }
 
 .mod-resultTable {
@@ -289,6 +309,40 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   vertical-align: middle;
   border: 1px solid #cccccc; }
 
+.scrollNav.scrollNav--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  margin-top: 0;
+  background: #f7f7f7;
+  z-index: 10; }
+  .scrollNav.scrollNav--fixed .scrollNav__content {
+    margin-top: 16px;
+    margin-left: 30px;
+    margin-right: 30px; }
+
+.nav-tabs {
+  border: 0; }
+  .nav-tabs > li > a {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    border: none;
+    background: none; }
+    .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+      background: none;
+      outline: none; }
+  .nav-tabs > li.active a,
+  .nav-tabs > li.active a:focus,
+  .nav-tabs > li.active a:hover {
+    cursor: pointer;
+    border: none;
+    color: #cccccc;
+    background: none;
+    border: none; }
+
 .tournament-keyvidual {
   margin-top: 40px;
   position: relative;
@@ -350,7 +404,10 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   font-weight: bold;
   vertical-align: middle; }
 
-.tournament-nav {
+.tournament-navArea {
+  width: 100%;
+  height: 25px;
+  display: block;
   margin-top: 30px; }
 
 .tournament-nav__content {
@@ -408,16 +465,18 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   font-size: 1.1rem;
   vertical-align: middle; }
 
-.tournament-table {
-  padding-top: 30px;
+.tournament-tableArea {
   padding-bottom: 120px; }
+
+.tournament-table {
+  padding-top: 30px; }
 
 .tournament-table__content {
   position: relative;
   text-align: center;
   border: 1px solid #dddddd;
   box-shadow: 0 2px #dddddd;
-  margin-top: 30px;
+  margin-top: 60px;
   padding: 60px 30px; }
 
 .tournament-table__round--01 td,
@@ -441,8 +500,12 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   .tournament-table__play:hover {
     background: #f7f7f7; }
 
-.tournament-tableContent {
+.tournament-tableContentArea {
+  line-height: 0;
   display: inline-block; }
+
+.tournament-tableContent--result {
+  display: none; }
 
 .tournament-table__num,
 .tournament-table__name,
@@ -495,17 +558,20 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   height: 480px; }
 
 .tournament-table__round--result td {
-  height: 480px; }
+  width: 200px;
+  height: 480px;
+  line-height: 2; }
 
 .tournament-table__round--result__tag {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 5px 10px;
   font-size: 1.1rem;
   background: #cb1b45;
   color: #ffffff;
   border-radius: 2px;
   margin-left: 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  line-height: 1; }
 
 .tournament-table__round--result__text {
   font-size: 1.1rem; }
@@ -515,6 +581,7 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   bottom: 30px;
   right: 30px; }
   .tournament-table__button a {
+    cursor: pointer;
     display: inline-block;
     padding: 5px 30px;
     border: 1px solid #cccccc;

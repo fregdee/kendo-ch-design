@@ -1,0 +1,46 @@
+// SCROLL SPY
+
+.scrollNav.scrollNav--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    background: $color--gray;
+    z-index: 10;
+    .scrollNav__content {
+        margin-top: 16px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+.nav-tabs {
+    border: 0;
+    > li {
+        > a {
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+            border: none;
+            background: none;
+            &:hover,
+            &:focus {
+                background: none;
+                outline: none;
+            }
+        }
+        &.active {
+            a,
+            a:focus,
+            a:hover {
+                cursor: pointer;
+                border: none;
+                color: $color--gray--05;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}

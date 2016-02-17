@@ -21,15 +21,16 @@ $color--red: #cb1b45;
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 730px;
     height: 40px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background-color: $color--white;
+    background: $color--white url(/common/images/common/noise--02.png);
     box-shadow: 0 2px $color--gray--02;
     z-index: 100;
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
+    -webkit-transition: background .3s;
+    transition: background .3s;
 }
 .mod-header__logo {
     display: inline-block;
@@ -54,9 +55,9 @@ $color--red: #cb1b45;
     }
 }
 .mod-header--fixed {
-    background-color: $color--navy;
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
+    background: $color--navy url(/common/images/common/noise--02.png);
+    -webkit-transition: background .3s;
+    transition: background .3s;
     .mod-header__logo {
         a {
             color: $color--white;
@@ -77,7 +78,8 @@ $color--red: #cb1b45;
 
 #mod-footer {
     width: 100%;
-    background: $color--gray;
+    min-width: 730px;
+    background: $color--gray url(/common/images/common/noise--02.png);
     padding: 15px;
     text-align: center;
 }

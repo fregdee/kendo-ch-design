@@ -1,6 +1,7 @@
 html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt, dd, section, article, header, footer, main, small, select, a, a:link, a:hover, a:visited, a:active, a:focus, button {
   padding: 0;
   margin: 0;
+  font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
   font-size: 10px;
   font-weight: normal;
   color: #000000;
@@ -8,15 +9,20 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   letter-spacing: 1px;
   text-decoration: none; }
 
-@media (min-width: 768px) {
-  .container {
-    width: 730px; } }
-@media (min-width: 992px) {
-  .container {
-    width: 730px; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 730px; } }
+html, body {
+  overflow-x: hidden; }
+
+.container {
+  width: 730px; }
+  @media (min-width: 768px) {
+    .container {
+      width: 730px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 730px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 730px; } }
 
 /* mod-: MODULE */
 .mod-header {
@@ -24,15 +30,16 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 730px;
   height: 40px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  background-color: #ffffff;
+  background: #ffffff url(/common/images/common/noise--02.png);
   box-shadow: 0 2px #dddddd;
   z-index: 100;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s; }
+  -webkit-transition: background .3s;
+  transition: background .3s; }
 
 .mod-header__logo {
   display: inline-block;
@@ -55,9 +62,9 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
     transition: color .3s; }
 
 .mod-header--fixed {
-  background-color: #0f2540;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s; }
+  background: #0f2540 url(/common/images/common/noise--02.png);
+  -webkit-transition: background .3s;
+  transition: background .3s; }
   .mod-header--fixed .mod-header__logo a {
     color: #ffffff;
     -webkit-transition: color .3s;
@@ -69,7 +76,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
 
 #mod-footer {
   width: 100%;
-  background: #f7f7f7;
+  min-width: 730px;
+  background: #f7f7f7 url(/common/images/common/noise--02.png);
   padding: 15px;
   text-align: center; }
 
@@ -316,7 +324,7 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   height: 60px;
   width: 100%;
   margin-top: 0;
-  background: #f7f7f7;
+  background: #f7f7f7 url(/common/images/common/noise--02.png);
   z-index: 10; }
   .scrollNav.scrollNav--fixed .scrollNav__content {
     margin-top: 16px;
@@ -346,11 +354,14 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
 /* top-: TOP */
 .top-keyvisual {
   position: relative;
-  background: #0f2540;
+  background: #0f2540 url(/common/images/common/noise--02.png);
+  width: 100%;
+  min-width: 730px;
   height: 300px; }
 
 .top-header {
   width: 100%;
+  min-width: 730px;
   padding-left: 30px;
   padding-right: 30px; }
 
@@ -367,7 +378,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  min-width: 730px; }
 
 .top-title__logo {
   margin-bottom: 22px;
@@ -401,7 +413,7 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   color: #ffffff; }
 
 .top-news {
-  background: #f7f7f7; }
+  background: #f7f7f7 url(/common/images/common/noise--02.png); }
 
 .top-news__content {
   padding-top: 30px;
@@ -431,7 +443,7 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
     padding: 20px;
     background: #ffffff; }
     .top-news__list a:hover {
-      background: #eeeeee; }
+      background: #f7f7f7; }
   .top-news__list li:last-child a {
     border-bottom: none; }
 
@@ -447,13 +459,22 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   vertical-align: middle; }
 
 .top-newsList__text {
+  max-width: 540px;
+  display: inline-block;
   position: relative;
   font-size: 1.3rem;
   vertical-align: middle;
-  background: linear-gradient(transparent 60%, rgba(15, 37, 64, 0.1) 60%); }
+  background: linear-gradient(transparent 60%, rgba(15, 37, 64, 0.1) 60%);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  /* Safari */
+  -o-text-overflow: ellipsis;
+  /* Opera */ }
 
 .top-game {
-  background: #ffffff; }
+  background: #ffffff url(/common/images/common/noise--02.png); }
 
 .top-game__content {
   padding-top: 30px;
@@ -473,17 +494,9 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
   font-weight: bold;
   color: #000000; }
 
-.top-game__listContent {
-  padding-left: 20px;
-  padding-right: 20px; }
-
 .top-game__list {
-  border: 1px solid #dddddd;
-  box-shadow: 0 2px #dddddd;
-  margin-left: -20px;
-  margin-right: -20px;
-  background: #f7f7f7;
-  padding: 10px; }
+  margin-left: -10px;
+  margin-right: -10px; }
   .top-game__list li {
     padding: 10px; }
   .top-game__list a {
@@ -492,11 +505,12 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
     width: 100%;
     height: auto;
     padding: 30px 15px 15px;
-    border: 1px solid #cccccc;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px #dddddd;
     background: #ffffff;
     border-radius: 2px; }
     .top-game__list a:hover {
-      background: #eeeeee; }
+      background: #f7f7f7; }
 
 .top-gameList__tag {
   position: absolute;
@@ -512,9 +526,17 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, span, ul, li, table, th, td, dl, dt,
 .top-gameList__date {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 15px;
   font-size: 1.1rem;
   color: #999999; }
+
+.top-gameList__image {
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  overflow: hidden; }
+  .top-gameList__image img {
+    width: 100%; }
 
 .top-gameList__text {
   font-size: 1.3rem;

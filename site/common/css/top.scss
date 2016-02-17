@@ -6,11 +6,14 @@
 
 .top-keyvisual {
     position: relative;
-    background: $color--navy;
+    background: $color--navy url(/common/images/common/noise--02.png);
+    width: 100%;
+    min-width: 730px;
     height: 300px;
 }
 .top-header {
     width: 100%;
+    min-width: 730px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -29,6 +32,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+    min-width: 730px;
 }
 .top-title__logo {
     margin-bottom: 22px;
@@ -64,7 +68,7 @@
     color: $color--white;
 }
 .top-news {
-    background: $color--gray;
+    background: $color--gray url(/common/images/common/noise--02.png);
 }
 .top-news__content {
     padding-top: 30px;
@@ -94,7 +98,7 @@
         padding: 20px;
         background: $color--white;
         &:hover {
-            background: $color--gray--04;
+            background: $color--gray;
         }
     }
     li:last-child {
@@ -115,13 +119,20 @@
     vertical-align: middle;
 }
 .top-newsList__text {
+    max-width: 540px;
+    display: inline-block;
     position: relative;
     font-size: 1.3rem;
     vertical-align: middle;
     background: linear-gradient(transparent 60%, rgba(15,37,64,0.1) 60%);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis; /* Safari */
+    -o-text-overflow: ellipsis; /* Opera */
 }
 .top-game {
-    background: $color--white;
+    background: $color--white url(/common/images/common/noise--02.png);
 }
 .top-game__content {
     padding-top: 30px;
@@ -141,17 +152,9 @@
     font-weight: bold;
     color: $color--black;
 }
-.top-game__listContent {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 .top-game__list {
-    border: 1px solid $color--gray--02;
-    box-shadow: 0 2px $color--gray--02;
-    margin-left: -20px;
-    margin-right: -20px;
-    background: $color--gray;
-    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
     li {
         padding: 10px;
     }
@@ -161,11 +164,12 @@
         width: 100%;
         height: auto;
         padding: 30px 15px 15px;
-        border: 1px solid $color--gray--05;
+        border: 1px solid $color--gray--02;
+        box-shadow: 0 2px $color--gray--02;
         background: $color--white;
         border-radius: 2px;
         &:hover {
-            background: $color--gray--04;
+            background: $color--gray;
         }
     }
 }
@@ -183,9 +187,18 @@
 .top-gameList__date {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 15px;
     font-size: 1.1rem;
     color: $color--gray--03;
+}
+.top-gameList__image {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
 }
 .top-gameList__text {
     font-size: 1.3rem;

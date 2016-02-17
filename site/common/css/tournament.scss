@@ -4,8 +4,9 @@
     margin-top: 40px;
     position: relative;
     width: 100%;
+    min-width: 730px;
     height: 200px;
-    background: $color--navy;
+    background: $color--navy url(/common/images/common/noise--02.png);
     z-index: -1;
 }
 .tournament-keyvidual__content {
@@ -14,6 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    min-width: 730px;
     text-align: center;
 }
 .tournament-keyvidual__title {
@@ -127,6 +129,9 @@
     font-size: 1.1rem;
     vertical-align: middle;
 }
+.tournament-main {
+    background: $color--white url(/common/images/common/noise--02.png);
+}
 .tournament-tableArea {
     padding-bottom: 120px;
 }
@@ -140,6 +145,7 @@
     box-shadow: 0 2px $color--gray--02;
     margin-top: 60px;
     padding: 60px 30px;
+    background: $color--white;
 }
 .tournament-table__round--01,
 .tournament-table__round--02,

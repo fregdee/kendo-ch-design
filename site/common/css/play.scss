@@ -8,8 +8,9 @@
     margin-top: 40px;
     position: relative;
     width: 100%;
+    min-width: 730px;
     height: 100px;
-    background: $color--navy;
+    background: $color--navy url(/common/images/common/noise--02.png);
     z-index: -1;
 }
 .play-keyvidual__title {
@@ -18,35 +19,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    min-width: 730px;
     color: $color--white;
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
 }
 .play-main {
-    background: $color--white;
-}
-.play-keyvidual {
-    margin-top: 40px;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background: $color--navy;
-    z-index: -1;
-}
-.play-keyvidual__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color: $color--white;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-}
-.play-main {
-    background: $color--white;
+    background: $color--white url(/common/images/common/noise--02.png);
 }
 .play-videoArea {
     padding-bottom: 120px;
@@ -58,6 +38,7 @@
     border: 1px solid $color--gray--02;
     box-shadow: 0 2px $color--gray--02;
     margin-top: 60px;
+    background: $color--white;
 }
 #play-video__content--result {
     margin-top: 60px;

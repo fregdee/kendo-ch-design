@@ -4,7 +4,7 @@
     margin-top: 40px;
     position: relative;
     width: 100%;
-    min-width: 730px;
+    min-width: 670px;
     height: 200px;
     background: $color--navy url(/common/images/common/noise--02.png);
     z-index: -1;
@@ -15,7 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    min-width: 730px;
+    min-width: 670px;
     text-align: center;
 }
 .tournament-keyvidual__title {
@@ -80,21 +80,9 @@
     li {
         float: left;
         position: relative;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
         line-height: 1;
-        &:after {
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            background: $color--black;
-            top: 0;
-            right: 0;
-        }
-        &:last-child:after {
-            content: none;
-        }
     }
     a {
         font-size: 1.3rem;
@@ -117,6 +105,7 @@
     border: 1px solid $color--gray--05;
     vertical-align: middle;
     margin-right: 5px;
+    background: $color--white;
 }
 .tournament-nav__caution__mark--02 {
     color: $color--gray--05;
@@ -141,11 +130,9 @@
 .tournament-table__content {
     position: relative;
     text-align: center;
-    border: 1px solid $color--gray--02;
-    box-shadow: 0 2px $color--gray--02;
-    margin-top: 60px;
-    padding: 60px 30px;
-    background: $color--white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $color--gray--02;
 }
 .tournament-table__round--01,
 .tournament-table__round--02,
@@ -261,14 +248,16 @@
 }
 .tournament-table__button {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 65px;
+    right: 0;
     a {
         cursor: pointer;
         display: inline-block;
         padding: 5px 30px;
         border: 1px solid $color--gray--05;
+        box-shadow: 0 2px $color--gray--02;
         border-radius: 4px;
+        background: $color--white;
         &:hover {
             background: $color--gray;
         }

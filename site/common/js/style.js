@@ -10,7 +10,7 @@ $(function(){
       // 移動先を取得
       var target = $(href == "#" || href == "" ? 'html' : href);
       // 移動先を数値で取得
-      var position = target.offset().top - 128;
+      var position = target.offset().top - 82;
       // スムーススクロール
       $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
@@ -23,7 +23,7 @@ $(function() {
    var nav = $('.scrollNav');
    var header = $('.mod-header');
    //表示位置
-   var navTop = nav.offset().top-56;
+   var navTop = nav.offset().top-62;
    var navHeight = nav.height();
    var showFlag = false;
    nav.css('top', -navHeight+'px');

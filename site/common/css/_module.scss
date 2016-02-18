@@ -122,17 +122,8 @@ $color--red: #cb1b45;
 
 // RESULT TABLE
 
-#mod-resultTableContent,
-#mod-resultTableContent--02,
-#mod-resultTableContent--03,
-#mod-resultTableContent--04,
-#mod-resultTableContent--05,
-#mod-resultTableContent--result {
-    border-top: 1px dotted $color--gray--02;
-}
 .mod-resultTable {
     margin-top: 20px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid $color--gray--05;
@@ -180,6 +171,7 @@ $color--red: #cb1b45;
     text-align: center;
     font-size: 1.3rem;
     border-bottom: 1px solid $color--gray--05;
+    background: $color--white;
 }
 .mod-resultTable__point--last {
     border-right: none;
@@ -211,7 +203,6 @@ $color--red: #cb1b45;
 }
 .mod-resultTable--all {
     margin-top: 20px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid $color--gray--05;
@@ -224,6 +215,7 @@ $color--red: #cb1b45;
     border-bottom: 1px solid $color--gray--05;
     text-align: center;
     position: relative;
+    background: $color--white;
 }
 .mod-resultTable--all__team__red {
     position: absolute;
@@ -257,6 +249,7 @@ $color--red: #cb1b45;
     border-right: 1px solid $color--gray--05;
     text-align: center;
     position: relative;
+    background: $color--white;
 }
 .mod-resultTable--all__result__num {
     font-size: 1.8rem;
@@ -288,6 +281,7 @@ $color--red: #cb1b45;
     padding: 10px;
     font-size: 1.3rem;
     border-bottom: 1px solid $color--gray--05;
+    background: $color--white;
 }
 .mod-resultTable--all__judge {
     min-width: 50px;

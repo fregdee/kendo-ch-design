@@ -8,7 +8,7 @@
     margin-top: 40px;
     position: relative;
     width: 100%;
-    min-width: 730px;
+    min-width: 670px;
     height: 100px;
     background: $color--navy url(/common/images/common/noise--02.png);
     z-index: -1;
@@ -19,7 +19,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    min-width: 730px;
+    min-width: 670px;
     color: $color--white;
     font-size: 1.8rem;
     font-weight: bold;
@@ -35,18 +35,16 @@
     padding-top: 30px;
 }
 .play-video__content {
-    border: 1px solid $color--gray--02;
-    box-shadow: 0 2px $color--gray--02;
-    margin-top: 60px;
-    background: $color--white;
-}
-#play-video__content--result {
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &:last-child {
+        border-top: 1px dotted $color--gray--05;
+        padding-bottom: 0;
+    }
 }
 .play-video__title {
-    border-bottom: 1px dotted $color--gray--02;
-    padding: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .play-video__title__player {
     display: inline-block;
@@ -82,16 +80,24 @@
     margin-right: 10px;
 }
 .play-video__video {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
-    border-bottom: 1px dotted $color--gray--02;
+    line-height: 1;
+    .video-stream {
+        border-radius: 4px;
+        overflow: hidden;
+    }
 }
 .play-video__result {
+    text-align: center;
     a {
-        display: block;
+        display: inline-block;
         text-align: center;
-        padding: 15px;
+        padding: 10px 60px;
+        border-radius: 4px;
+        border: 1px solid  $color--gray--05;
+        box-shadow: 0 2px $color--gray--02;
+        background: $color--white;
         &:hover {
             background: $color--gray;
         }
@@ -125,21 +131,9 @@
     li {
         float: left;
         position: relative;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
         line-height: 1;
-        &:after {
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            background: $color--black;
-            top: 0;
-            right: 0;
-        }
-        &:last-child:after {
-            content: none;
-        }
     }
     a {
         font-size: 1.3rem;

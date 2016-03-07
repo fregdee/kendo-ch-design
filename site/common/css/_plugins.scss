@@ -16,7 +16,6 @@
         margin-right: 15px;
     }
 }
-
 .nav-tabs {
     border: 0;
     > li {
@@ -44,4 +43,105 @@
             }
         }
     }
+}
+
+// ANIMATED MODAL
+
+.animatedModal__content {
+    position: relative;
+}
+.modal-content {
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+}
+.close-animatedModal {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    @media (max-width: 768px) {
+        right: 30px;
+    }
+}
+.modal-content {
+    margin-top: 180px;
+    margin-bottom: 150px;
+}
+.modal__title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.modal__title__text {
+    vertical-align: middle;
+    font-size: 2.8rem;
+    font-family: "Yu Mincho", "YuMincho";
+    color: $color--black;
+    display: block;
+}
+.modal__title__subText {
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: $color--gray--03;
+    display: block;
+    margin-top: 10px;
+}
+.modal__list {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 768px) {
+        width: auto;
+    }
+    li {
+        text-align: center;
+        margin: 30px auto;
+    }
+}
+.modalList__position {
+    position: relative;
+    display: inline-block;
+}
+.modalList__num {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: $color--navy;
+    color: $color--white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 50%;
+}
+.modalList__image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid $color--gray--05;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+.modalList__text {
+    display: block;
+    margin-top: 20px;
+}
+.modalList__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-heihgt: 1.5;
+    display: block;
+}
+.modalList__description {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    display: block;
 }

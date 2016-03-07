@@ -447,144 +447,66 @@ html, body {
     .br--on {
       display: block; } }
 
-/* top-: TOP */
-.top-keyvisual {
+/* about-: ABOUT */
+.about-keyvisual {
   background: #ffffff url(/common/images/common/noise--03.png);
   width: 100%; }
 
-.top-keyvisual__content {
+.about-keyvisual__content {
   position: relative;
   height: 100%; }
 
-.top-header__logo {
+.about-header__logo {
   float: left;
   margin-top: 30px; }
-  .top-header__logo a {
+  .about-header__logo a {
     font-size: 1.8rem;
     font-weight: bold;
     color: #000000; }
 
-.top-header__nav {
+.about-header__nav {
   float: right; }
-  .top-header__nav li {
+  .about-header__nav li {
     float: left;
     margin-top: 34px;
     margin-left: 30px; }
-    .top-header__nav li:first-child {
+    .about-header__nav li:first-child {
       margin-left: 0; }
     @media (max-width: 768px) {
-      .top-header__nav li {
+      .about-header__nav li {
         float: none;
         margin-top: 10px;
         margin-left: 0;
         text-align: right; }
-        .top-header__nav li:first-child {
+        .about-header__nav li:first-child {
           margin-top: 34px; } }
 
-.top-header__about a {
+.about-header__about a {
   font-size: 1.3rem;
   color: #000000; }
 
-.top-header__how a {
+.about-header__how a {
   font-size: 1.3rem;
   color: #000000; }
 
-.top-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%; }
-
-.top-title__catchcopy {
-  font-size: 3.2rem;
-  font-family: "Yu Mincho", "YuMincho";
-  line-height: 1.5;
-  color: #000000; }
-  @media (max-width: 768px) {
-    .top-title__catchcopy {
-      margin-top: -100px; } }
-
-.top-news {
-  position: absolute;
-  bottom: 30px;
-  left: 15px;
-  right: 15px; }
-
-.top-news__title {
-  margin-right: 30px;
-  margin-bottom: 20px;
-  float: left; }
-  @media (max-width: 768px) {
-    .top-news__title {
-      float: none; } }
-
-.top-news__title__text {
-  font-size: 2.4rem;
-  font-family: "Yu Mincho", "YuMincho";
-  color: #000000;
-  display: block; }
-
-.top-news__title__subText {
-  font-size: 1.1rem;
-  font-family: 'Roboto';
-  font-weight: bold;
-  color: #999999;
-  display: block;
-  margin-top: 5px; }
-
-.top-news__list {
-  float: left; }
-  @media (max-width: 768px) {
-    .top-news__list {
-      float: none; } }
-  .top-news__list li {
-    margin-bottom: 10px; }
-    .top-news__list li:last-child {
-      margin-bottom: 0; }
-  .top-news__list a {
-    display: inline-block;
-    width: 100%;
-    position: relative; }
-    .top-news__list a:hover {
-      opacity: 0.8; }
-
-.top-newsList__date {
-  margin-right: 10px;
-  font-size: 1.1rem;
-  color: #999999; }
-
-.top-newsList__text {
-  display: inline-block;
-  position: relative;
-  font-size: 1.3rem;
-  vertical-align: middle;
-  color: #337ab7; }
-  @media (max-width: 768px) {
-    .top-newsList__text {
-      display: block;
-      margin-top: 5px; } }
-
-.top-game {
+.about-channel {
   background: #ffffff url(/common/images/common/noise--03.png); }
 
-.top-game__content {
+.about-channel__content {
   padding-top: 120px;
-  padding-bottom: 135px; }
+  padding-bottom: 150px; }
 
-.top-game__title {
-  margin-bottom: 15px;
-  text-align: center; }
+.about-channel__title {
+  margin-bottom: 15px; }
 
-.top-game__title__text {
+.about-channel__title__text {
   vertical-align: middle;
   font-size: 2.8rem;
   font-family: "Yu Mincho", "YuMincho";
   color: #000000;
   display: block; }
 
-.top-game__title__subText {
+.about-channel__title__subText {
   font-size: 1.1rem;
   font-family: 'Roboto';
   font-weight: bold;
@@ -592,48 +514,48 @@ html, body {
   display: block;
   margin-top: 10px; }
 
-.top-game__list {
-  margin-left: -15px;
-  margin-right: -15px; }
-  @media (max-width: 768px) {
-    .top-game__list {
-      margin-left: 0;
-      margin-right: 0; } }
-  .top-game__list li {
-    padding: 15px; }
-  .top-game__list a {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    border-radius: 2px; }
-    .top-game__list a:hover {
-      opacity: 0.8; }
+.about-channel__description {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
-.top-gameList__tag {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 5px 15px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #ffffff;
-  background: #cb1b45;
-  display: inline-block; }
-
-.top-gameList__date {
-  font-size: 1.1rem;
-  color: #999999;
-  display: block; }
-
-.top-gameList__image {
-  display: block;
-  margin-bottom: 10px;
-  overflow: hidden; }
-  .top-gameList__image img {
+.about-channel__image {
+  text-align: right; }
+  .about-channel__image img {
     width: 100%; }
 
-.top-gameList__text {
+.about-project {
+  background: #ffffff url(/common/images/common/noise--03.png); }
+
+.about-project__content {
+  padding-bottom: 150px; }
+
+.about-project__title {
+  margin-bottom: 15px; }
+
+.about-project__title__text {
+  vertical-align: middle;
+  font-size: 2.8rem;
+  font-family: "Yu Mincho", "YuMincho";
+  color: #000000;
+  display: block; }
+
+.about-project__title__subText {
+  font-size: 1.1rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #999999;
+  display: block;
+  margin-top: 10px; }
+
+.about-project__description {
   font-size: 1.3rem;
-  line-height: 1.5;
-  font-weight: bold; }
+  line-height: 2;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.about-project__image {
+  text-align: left; }
+  .about-project__image img {
+    width: 100%; }

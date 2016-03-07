@@ -9,6 +9,7 @@ $color--gray--03: #999999;
 $color--gray--04: #eeeeee;
 $color--gray--05: #cccccc;
 $color--red: #cb1b45;
+$color--blue: #337ab7;
 
 // MODULE
 
@@ -21,7 +22,6 @@ $color--red: #cb1b45;
     top: 0;
     left: 0;
     width: 100%;
-    min-width: 730px;
     height: 40px;
     padding-left: 30px;
     padding-right: 30px;
@@ -78,9 +78,8 @@ $color--red: #cb1b45;
 
 #mod-footer {
     width: 100%;
-    min-width: 730px;
-    background: $color--gray url(/common/images/common/noise--02.png);
-    padding: 15px;
+    background: $color--white url(/common/images/common/noise--03.png);
+    padding: 0 15px 50px;
     text-align: center;
 }
 .mod-footer__copyright {

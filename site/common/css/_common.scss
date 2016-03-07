@@ -14,15 +14,3 @@ html,body,h1,h2,h3,h4,h5,h6,div,p,span,ul,li,table,th,td,dl,dt,dd,section,articl
 html, body {
     overflow-x: hidden;
 }
-.container {
-    width: 670px;
-    @media (min-width: 768px) {
-        width: 670px;
-    }
-    @media (min-width: 992px) {
-        width: 670px;
-    }
-    @media (min-width: 1200px) {
-        width: 670px;
-    }
-}

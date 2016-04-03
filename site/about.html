@@ -18,58 +18,55 @@
 </head>
 <body id="about">
 
-    <div class="about-keyvisual noise">
-        <div class="about-keyvisual__content container">
-            <header class="about-header clearfix">
-                <div class="about-header__logo"><a href="/">剣道チャンネル</a></div>
-                <ul class="about-header__nav clearfix">
-                    <li class="about-header__about"><a href="/about.html">このサイトについて</a></li>
-                    <li class="about-header__how"><a id="how__link" href="#animatedModal">ご利用方法</a></li>
-                </ul>
-            </header>
+    <header class="mod-header">
+        <div class="mod-logo"><a href="/">剣道チャンネル</a></div>
+        <div class="dropdown mod-nav">
+            <button class="mod-nav_button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                メニュー
+            </button>
+            <ul class="mod-nav_menu dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="mod-nav__about"><a href="/about.html">このサイトについて</a></li>
+                <li class="mod-nav__how"><a id="how__link" href="#animatedModal">ご利用方法</a></li>
+            </ul>
         </div>
-    </div>
+    </header>
 
-    <section class="about-channel noise">
-        <div class="about-channel__content container">
-            <div class="about-channel__position row">
-                <div class="about-channel__text col-md-6 col-md-push-1 col-sm-7">
-                    <h2 class="about-channel__title">
-                        <span class="about-channel__title__text">剣道チャネルとは</span>
-                        <span class="about-channel__title__subText">ABOUT KENDO-CH</span>
-                    </h2>
-                    <p class="about-channel__description">剣道ファンのための剣道動画サービスです。観たい試合が簡単、確実に見つかります。オンラインでこそ実現できるインタラクティブ（双方向）な体験をお楽しみください。</p>
-                </div>
-                <div class="about-channel__image col-md-4 col-md-push-1 col-sm-5">
-                    <img src="http://placehold.it/600x600" alt="">
-                </div>
-            </div>
+    <section class="about-channel">
+        <div class="about-channel__text">
+            <h2 class="about-channel__title">
+                <span class="about-channel__title__text">剣道チャネルとは</span>
+                <span class="about-channel__title__subText">ABOUT KENDO-CH</span>
+            </h2>
+            <p class="about-channel__description">剣道ファンのための剣道動画サービスです。<br class="br--off">観たい試合が簡単、確実に見つかります。<br class="br--off">オンラインでこそ実現できるインタラクティブ（双方向）な体験をお楽しみください。</p>
+        </div>
+        <div class="about-channel__image">
+            <img src="http://placehold.it/1920x800" alt="">
         </div>
     </section>
 
-    <section class="about-project noise">
-        <div class="about-project__content container">
-            <div class="about-project__position row">
-                <div class="about-project__text col-md-6 col-md-push-5 col-sm-7 col-sm-push-5">
+    <section class="about-project">
+        <table class="about-project__content">
+            <tr>
+                <th class="about-project__text">
                     <h2 class="about-project__title">
                         <span class="about-project__title__text">剣道チャネルプロジェクト</span>
                         <span class="about-project__title__subText">KENDO-CH PROJECT</span>
                     </h2>
                     <p class="about-project__description">Kendo-chは、オンラインでの試合観戦をよりインタラクティブな体験に変えるプロジェクトです。これまでの動画サービスで、情報の集積と閲覧環境の整備により欲しい時に欲しい動画にアクセスできる環境が整いつつあります。しかし、「オンラインで動画が観れる」に留まり、「試合観戦」という体験をオンライン上で拡張するには至っていません。本プロジェクトでは現在の「試合観戦」という体験を、各コンテンツを形ある体験として再構築することで、試合観戦の新たな楽しみ方を追求します。</p>
-                </div>
-                <div class="about-project__image col-md-4 col-md-pull-5 col-sm-5 col-sm-pull-7">
-                    <img src="http://placehold.it/600x600" alt="">
-                </div>
-            </div>
-        </div>
+                </th>
+                <td class="about-project__image">
+                    <img src="http://placehold.it/460x460" alt="">
+                </td>
+            </tr>
+        </table>
     </section>
 
-    <footer id="mod-footer" class="noise">
+    <footer class="mod-footer clearfix">
         <small class="mod-footer__copyright">&copy;kendo-ch.net</small>
     </footer>
 
     <div id="animatedModal">
-        <div class="animatedModal__content container">
+        <div class="animatedModal__content">
             <div class="close-animatedModal">
                 <img src="/common/images/common/icon__close.png" alt="close">
             </div>

@@ -3,129 +3,223 @@
 $color--black: #000000;
 $color--white: #ffffff;
 $color--navy: #0f2540;
-$color--gray: #f7f7f7;
-$color--gray--02: #dddddd;
-$color--gray--03: #999999;
-$color--gray--04: #eeeeee;
-$color--gray--05: #cccccc;
 $color--red: #cb1b45;
 $color--blue: #337ab7;
+$color--gray: #cccccc;
+$color--gray--02: #eeeeee;
+$color--gray--03: #666666;
+$color--gray--04: #999999;
 
 // MODULE
 
 /* mod-: MODULE */
 
+.mod-body {
+    background: $color--white;
+}
+.mod-content {}
+
 // HEADER
 
 .mod-header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
-    background: $color--white url(/common/images/common/noise--02.png);
-    box-shadow: 0 2px $color--gray--02;
-    z-index: 100;
-    -webkit-transition: background .3s;
-    transition: background .3s;
+    height: 90px;
+    position: relative;
 }
-.mod-header__logo {
-    display: inline-block;
-    margin-top: 8px;
+.mod-logo {
+    position: absolute;
+    top: 34px;
+    left: 45px;
+    line-height: 1;
+    z-index: 1;
+    @media (max-width: 768px) {
+        left: 30px;
+    }
     a {
         font-size: 1.8rem;
         font-weight: bold;
-        color: $color--navy;
-        -webkit-transition: color .3s;
-        transition: color .3s;
+        color: $color--black;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
-.mod-header__language {
+.mod-nav {
     position: absolute;
-    top: 12px;
-    right: 30px;
+    top: 30px;
+    right: 45px;
+    z-index: 10;
+    @media (max-width: 768px) {
+        top: 30px;
+        right: 30px;
+    }
+}
+.mod-nav_button {
+    border: 1px solid $color--gray;
+    border-radius: 4px;
+    background: none;
+    color: $color--black;
+    padding: 5px 20px;
+    white-space: nowrap;
+    &:hover {
+        color: $color--gray--04;
+    }
+}
+.mod-nav_menu {
+    left: auto;
+    right: 0;
+    margin-top: 10px;
+    padding: 10px 0;
+    border: 1px solid $color--gray;
+    border-radius: 0;
+    box-shadow: none;
+}
+.mod-nav__about {
     a {
         font-size: 1.1rem;
-        color: $color--navy;
-        -webkit-transition: color .3s;
-        transition: color .3s;
+        color: $color--black;
+        padding: 5px 20px !important;
+        &:hover {
+            background: none !important;
+            color: $color--gray--04 !important;
+        }
     }
 }
-.mod-header--fixed {
-    background: $color--navy url(/common/images/common/noise--02.png);
-    -webkit-transition: background .3s;
-    transition: background .3s;
-    .mod-header__logo {
-        a {
-            color: $color--white;
-            -webkit-transition: color .3s;
-            transition: color .3s;
+.mod-nav__how {
+    a {
+        font-size: 1.1rem;
+        color: $color--black;
+        padding: 5px 20px !important;
+        &:hover {
+            background: none !important;
+            color: $color--gray--04 !important;
         }
     }
-    .mod-header__language {
-        a {
-            color: $color--white;
-            -webkit-transition: color .3s;
-            transition: color .3s;
-        }
+}
+
+// MAIN
+
+.mod-main {
+    position: relative;
+}
+.mod-tableArea {
+    padding: 60px 30px;
+    @media (max-width: 768px) {
+        padding: 60px 15px;
+    }
+}
+.mod-table {
+    width: 100%;
+    display: table;
+    @media (max-width: 768px) {
+        display: inline-block;
+    }
+}
+.mod-table__info {
+    display: table-cell;
+    vertical-align: top;
+    width: 300px;
+    @media (max-width: 768px) {
+        display: inline-block;
+        width: 100%;
+    }
+}
+.mod-table__main {
+    vertical-align: top;
+    display: table-cell;
+    @media (max-width: 768px) {
+        display: inline-block;
+        width: 100%;
     }
 }
 
 // FOOTER
 
-#mod-footer {
+.mod-footer {
     width: 100%;
-    background: $color--white url(/common/images/common/noise--03.png);
-    padding: 0 15px 50px;
-    text-align: center;
+    padding: 30px 45px;
+    @media (max-width: 768px) {
+        padding: 30px;
+    }
 }
 .mod-footer__copyright {
     font-size: 1.1rem;
-    font-weight: bold;
+    font-family: 'Roboto';
+    float: left;
+    overflow: hidden;
 }
 
 // PANKUZU
 
-.mod-pankuzuContent {
-    padding-top: 20px;
-}
 .mod-pankuzu {
+    margin-bottom: 15px;
     li {
         float: left;
     }
     .mod-pankuzu__link {
         font-size: 1.1rem;
         vertical-align: middle;
+        line-height: 2;
         &:hover {
-            color: $color--gray--05;
+            color: $color--gray--04;
         }
     }
 }
 .mod-pankuzu__text {
-    color: $color--gray--05;
+    color: $color--gray--04;
     font-size: 1.1rem;
     vertical-align: middle;
+    line-height: 2;
 }
 .mod-pankuzu__icon {
     vertical-align: middle;
     font-size: 1.1rem;
-    margin-top: 3px;
     margin-left: 10px;
     margin-right: 10px;
     float: left;
+    line-height: 2;
 }
 
+// KEYVISUAL
+
+.mod-keyvidual {
+    padding: 0 15px;
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
+}
+.mod-keyvidual__title {
+    color: $color--black;
+    font-size: 2.4rem;
+    text-align: left;
+}
+.mod-keyvidual__title__times {
+    color: $color--black;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    display: block;
+}
+.mod-keyvidual__info {
+    margin-top: 30px;
+    text-align: left;
+}
+.mod-keyvidual__date {
+    margin-bottom: 10px;
+}
+.mod-keyvidual__date__text {
+    font-size: 1.3rem;
+    color: $color--black;
+    vertical-align: middle;
+}
+.mod-keyvidual__place__text {
+    font-size: 1.3rem;
+    color: $color--black;
+    vertical-align: middle;
+}
 
 // RESULT TABLE
 
 .mod-resultTable {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid $color--gray--05;
     tr:last-child {
         .mod-resultTable__player,
         .mod-resultTable__point,
@@ -134,16 +228,83 @@ $color--blue: #337ab7;
         }
     }
 }
+#mod-resultTableContent {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    letter-spacing: -.4em;
+    padding-bottom: 10px;
+    &::-webkit-scrollbar {
+        overflow: hidden;
+        width: 1px;
+        background: #fafafa;
+    }
+    &::-webkit-scrollbar:vertical {
+        display: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+        height: 1px;
+    }
+    &::-webkit-scrollbar-button {
+        display:none;
+    }
+    &::-webkit-scrollbar-piece {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-piece:start {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color--black;
+    }
+    &::-webkit-scrollbar-corner {
+        background: $color--black;
+    }
+}
+#mod-resultTableContent--result {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    letter-spacing: -.4em;
+    padding-bottom: 10px;
+    &::-webkit-scrollbar {
+        overflow: hidden;
+        width: 1px;
+        background: #fafafa;
+    }
+    &::-webkit-scrollbar:vertical {
+        display: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+        height: 1px;
+    }
+    &::-webkit-scrollbar-button {
+        display:none;
+    }
+    &::-webkit-scrollbar-piece {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-piece:start {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color--black;
+    }
+    &::-webkit-scrollbar-corner {
+        background: $color--black;
+    }
+}
 .mod-resultTable__player {
-    background: $color--gray;
     min-width: 200px;
     padding: 10px;
-    border-right: 1px solid $color--gray--05;
-    border-bottom: 1px solid $color--gray--05;
+    border-right: 1px solid $color--gray;
+    border-bottom: 1px solid $color--gray;
 }
 .mod-resultTable__player__red {
     width: 10px;
-    height: 30px;
+    height: 20px;
     background: $color--red;
     border-radius: 2px;
     display: inline-block;
@@ -152,9 +313,9 @@ $color--blue: #337ab7;
 }
 .mod-resultTable__player__white {
     width: 10px;
-    height: 30px;
+    height: 20px;
     background: $color--white;
-    border: 1px solid $color--gray--05;
+    border: 1px solid $color--gray;
     border-radius: 2px;
     display: inline-block;
     vertical-align: middle;
@@ -162,14 +323,15 @@ $color--blue: #337ab7;
 }
 .mod-resultTable__player__name {
     font-size: 1.1rem;
+    vertical-align: middle;
 }
 .mod-resultTable__point {
     min-width: 50px;
-    padding: 10px;
-    border-right: 1px dotted $color--gray--05;
+    padding: 5px 10px;
+    border-right: 1px dotted $color--gray;
     text-align: center;
-    font-size: 1.3rem;
-    border-bottom: 1px solid $color--gray--05;
+    font-size: 1.1rem;
+    border-bottom: 1px solid $color--gray;
     background: $color--white;
 }
 .mod-resultTable__point--last {
@@ -177,16 +339,16 @@ $color--blue: #337ab7;
 }
 .mod-resultTable__judge {
     min-width: 50px;
-    background: $color--gray;
-    border-left: 1px solid $color--gray--05;
-    border-bottom: 1px solid $color--gray--05;
+    border-left: 1px solid $color--gray;
+    border-bottom: 1px solid $color--gray;
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px;
+    line-height: 0;
 }
 .mod-resultTable__judge__mark--red {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
     background: $color--red;
     display: inline-block;
     vertical-align: middle;
@@ -198,30 +360,27 @@ $color--blue: #337ab7;
     background: $color--white;
     display: inline-block;
     vertical-align: middle;
-    border: 1px solid $color--gray--05;
-}
-.mod-resultTable--all {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid $color--gray--05;
+    border: 1px solid $color--gray;
 }
 .mod-resultTable--all__team {
     min-width: 200px;
-    height: 60px;
+    height: 50px;
     padding: 10px;
-    border-right: 1px solid $color--gray--05;
-    border-bottom: 1px solid $color--gray--05;
+    border-right: 1px solid $color--gray;
+    border-bottom: 1px solid $color--gray;
     text-align: center;
     position: relative;
     background: $color--white;
+    &:last-child {
+        border-right: none;
+    }
 }
 .mod-resultTable--all__team__red {
     position: absolute;
     top: 10px;
     left: 10px;
     width: 10px;
-    height: 40px;
+    height: 30px;
     background: $color--red;
     border-radius: 2px;
     display: inline-block;
@@ -232,9 +391,9 @@ $color--blue: #337ab7;
     top: 10px;
     left: 10px;
     width: 10px;
-    height: 40px;
+    height: 30px;
     background: $color--white;
-    border: 1px solid $color--gray--05;
+    border: 1px solid $color--gray;
     border-radius: 2px;
     display: inline-block;
 }
@@ -243,87 +402,90 @@ $color--blue: #337ab7;
 }
 .mod-resultTable--all__result {
     min-width: 200px;
-    height: 60px;
+    height: 40px;
     padding: 10px;
-    border-right: 1px solid $color--gray--05;
+    border-right: 1px solid $color--gray;
     text-align: center;
     position: relative;
     background: $color--white;
+    line-height: 0;
+    &:last-child {
+        border-right: none;
+    }
 }
 .mod-resultTable--all__result__num {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .mod-resultTable--all__result__mark--red {
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 10px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 15px;
     background: $color--red;
     display: inline-block;
     vertical-align: middle;
 }
 .mod-resultTable--all__player {
-    min-width: 150px;
-    height: 50px;
+    min-width: 120px;
+    height: 40px;
     font-size: 1.1rem;
     text-align: center;
-    padding: 10px;
-    background: $color--gray;
-    border-bottom: 1px solid $color--gray--05;
+    padding: 5px 10px;
+    border-bottom: 1px solid $color--gray;
 }
 .mod-resultTable--all__point {
     min-width: 50px;
-    height: 50px;
+    height: 40px;
     text-align: center;
-    padding: 10px;
-    font-size: 1.3rem;
-    border-bottom: 1px solid $color--gray--05;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid $color--gray;
     background: $color--white;
 }
 .mod-resultTable--all__judge {
     min-width: 50px;
-    height: 50px;
-    background: $color--gray;
+    height: 40px;
     text-align: center;
-    padding: 10px;
-    border-bottom: 1px solid $color--gray--05;
+    padding: 5px 10px;
+    border-bottom: 1px solid $color--gray;
 
 }
 .mod-resultTable--all__player--left {
-    border-right: 1px solid $color--gray--05;
+    border-right: 1px solid $color--gray;
 }
 .mod-resultTable--all__player--right {
-    border-left: 1px solid $color--gray--05;
+    border-left: 1px solid $color--gray;
 }
 .mod-resultTable--all__point--left {
-    border-right: 1px dotted $color--gray--05;
+    border-right: 1px dotted $color--gray;
 }
 .mod-resultTable--all__point--right {
-    border-left: 1px dotted $color--gray--05;
+    border-left: 1px dotted $color--gray;
 }
 .mod-resultTable--all__judge--left {
-    border-left: 1px solid $color--gray--05;
-    border-right: 1px solid $color--gray--05;
+    border-left: 1px solid $color--gray;
+    border-right: 1px solid $color--gray;
+    line-height: 0;
 }
 .mod-resultTable--all__judge--right {
-    border-right: 1px solid $color--gray--05;
+    border-right: 1px solid $color--gray;
 }
 .mod-resultTable--all__judge__mark--red {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
     background: $color--red;
     display: inline-block;
     vertical-align: middle;
 }
 .mod-resultTable--all__judge__mark--white {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
     background: $color--white;
     display: inline-block;
     vertical-align: middle;
-    border: 1px solid $color--gray--05;
+    border: 1px solid $color--gray;
 }

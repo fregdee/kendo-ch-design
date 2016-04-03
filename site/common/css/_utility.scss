@@ -20,3 +20,8 @@
         display: block;
     }
 }
+.br--off {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

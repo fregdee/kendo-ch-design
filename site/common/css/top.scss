@@ -4,107 +4,177 @@
 
 /* top-: TOP */
 
+#top {
+    background: $color--white;
+}
 .top-keyvisual {
-    background: $color--white url(/common/images/common/noise--03.png);
-    width: 100%;
-}
-.top-keyvisual__content {
     position: relative;
-    height: 100%;
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: url(/common/images/common/noise--05.png);
+        animation: noise_anima 1s steps(10) infinite;
+        z-index: 0;
+    }
 }
-.top-header__logo {
-    float: left;
-    margin-top: 30px;
+.top-image {
+    width: 100%;
+    position: relative;
+}
+.top-logo {
+    position: absolute;
+    top: 34px;
+    left: 45px;
+    line-height: 1;
+    z-index: 1;
+    @media (max-width: 768px) {
+        left: 30px;
+    }
     a {
         font-size: 1.8rem;
         font-weight: bold;
-        color: $color--black;
-    }
-}
-.top-header__nav {
-    float: right;
-    li {
-        float: left;
-        margin-top: 34px;
-        margin-left: 30px;
-        &:first-child {
-            margin-left: 0;
-        }
-        @media (max-width: 768px) {
-            float: none;
-            margin-top: 10px;
-            margin-left: 0;
-            text-align: right;
-            &:first-child {
-                margin-top: 34px;
-            }
+        color: $color--white;
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
-.top-header__about {
-    a {
-        font-size: 1.3rem;
-        color: $color--black;
+.top-nav {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    z-index: 10;
+    @media (max-width: 768px) {
+        top: 30px;
+        right: 30px;
     }
 }
-.top-header__how {
+.top-nav_button {
+    border: 1px solid $color--white;
+    border-radius: 4px;
+    background: none;
+    color: $color--white;
+    padding: 5px 20px;
+    white-space: nowrap;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.top-nav_menu {
+    left: auto;
+    right: 0;
+    margin-top: 10px;
+    padding: 10px 0;
+    border: 1px solid $color--white;
+    border-radius: 0;
+    box-shadow: none;
+}
+.top-nav__about {
     a {
-        font-size: 1.3rem;
-        color: $color--black;
+        font-size: 1.1rem;
+        color: $color--white;
+        padding: 5px 20px !important;
+        &:hover {
+            background: none !important;
+            color: $color--gray--04 !important;
+        }
+    }
+}
+.top-nav__how {
+    a {
+        font-size: 1.1rem;
+        color: $color--white;
+        padding: 5px 20px !important;
+        &:hover {
+            background: none !important;
+            color: $color--gray--04 !important;
+        }
     }
 }
 .top-title {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    width: 100%;
     text-align: center;
     width: 100%;
+    z-index: 1;
+    @media (max-width: 768px) {
+        margin-top: 28px;
+    }
 }
 .top-title__catchcopy {
     font-size: 3.2rem;
-    font-family: "Yu Mincho", "YuMincho";
     line-height: 1.5;
-    color: $color--black;
+    color: $color--white;
     @media (max-width: 768px) {
-        margin-top: -100px;
+        font-size: 2.2rem;
     }
 }
 .top-news {
-    position: absolute;
-    bottom: 30px;
-    left: 15px;
-    right: 15px;
-}
-.top-news__title {
-    margin-right: 30px;
-    margin-bottom: 20px;
-    float: left;
+    padding: 30px;
     @media (max-width: 768px) {
-        float: none;
+        padding: 40px 15px;
+    }
+}
+.top-news__table {
+    width: 100%;
+    th {
+        width: 200px;
+        text-align: center;
+        vertical-align: top;
+        padding: 0 15px;
+        @media (max-width: 768px) {
+            display: block;
+            border-right: none;
+            width: 100%;
+            padding: 0 30px 30px;
+        }
+    }
+    td {
+        padding: 0 15px;
+        @media (max-width: 768px) {
+            display: block;
+            padding: 0 15px;
+        }
     }
 }
 .top-news__title__text {
-    font-size: 2.4rem;
-    font-family: "Yu Mincho", "YuMincho";
+    font-size: 1.8rem;
     color: $color--black;
     display: block;
+    white-space: nowrap;
+    text-align: left;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 .top-news__title__subText {
     font-size: 1.1rem;
     font-family: 'Roboto';
-    font-weight: bold;
-    color: $color--gray--03;
+    color: $color--gray;
     display: block;
     margin-top: 5px;
+    text-align: left;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 .top-news__list {
-    float: left;
-    @media (max-width: 768px) {
-        float: none;
+    width: 100%;
+    dt {
+        float: left;
     }
-    li {
+    dd {
+        margin-left: 80px;
         margin-bottom: 10px;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -119,56 +189,72 @@
     }
 }
 .top-newsList__date {
-    margin-right: 10px;
     font-size: 1.1rem;
-    color: $color--gray--03;
+    color: $color--gray;
 }
 .top-newsList__text {
-    display: inline-block;
-    position: relative;
-    font-size: 1.3rem;
-    vertical-align: middle;
-    color: $color--blue;
-    @media (max-width: 768px) {
-        display: block;
-        margin-top: 5px;
+    a {
+        font-size: 1.3rem;
+        color: $color--blue;
     }
 }
 .top-game {
-    background: $color--white url(/common/images/common/noise--03.png);
+    padding: 30px;
+    @media (max-width: 768px) {
+        padding: 40px 15px;
+    }
 }
-.top-game__content {
-    padding-top: 120px;
-    padding-bottom: 135px;
-}
-.top-game__title {
-    margin-bottom: 15px;
-    text-align: center;
+
+
+.top-game__table {
+    width: 100%;
+    th {
+        width: 200px;
+        text-align: center;
+        vertical-align: top;
+        padding: 0 15px;
+        @media (max-width: 768px) {
+            display: block;
+            border-right: none;
+            width: 100%;
+            padding: 0 30px 30px;
+        }
+    }
+    td {
+        padding: 0 15px;
+        @media (max-width: 768px) {
+            display: block;
+            padding: 0 15px;
+        }
+    }
 }
 .top-game__title__text {
-    vertical-align: middle;
-    font-size: 2.8rem;
-    font-family: "Yu Mincho", "YuMincho";
+    font-size: 1.8rem;
     color: $color--black;
     display: block;
+    text-align: left;
+    vertical-align: middle;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 .top-game__title__subText {
     font-size: 1.1rem;
     font-family: 'Roboto';
-    font-weight: bold;
-    color: $color--gray--03;
+    color: $color--gray;
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
+    text-align: left;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 .top-game__list {
-    margin-left: -15px;
-    margin-right: -15px;
-    @media (max-width: 768px) {
-        margin-left: 0;
-        margin-right: 0;
-    }
+    margin-top: -15px;
+    margin-bottom: -15px;
     li {
         padding: 15px;
+        line-height: 0;
     }
     a {
         position: relative;
@@ -176,9 +262,6 @@
         width: 100%;
         height: auto;
         border-radius: 2px;
-        &:hover {
-            opacity: 0.8;
-        }
     }
 }
 .top-gameList__tag {
@@ -191,22 +274,71 @@
     color: $color--white;
     background: $color--red;
     display: inline-block;
-}
-.top-gameList__date {
-    font-size: 1.1rem;
-    color: $color--gray--03;
-    display: block;
+    @media (max-width: 768px) {
+        padding: 5px 10px;
+    }
 }
 .top-gameList__image {
     display: block;
-    margin-bottom: 10px;
     overflow: hidden;
+    position: relative;
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        z-index: 1;
+    }
+    &:hover {
+        &:after {
+            background: rgba(0,0,0,0.1);
+        }
+    }
+    @media (max-width: 768px) {
+        float: left;
+        width: 100px;
+        margin-bottom: 0;
+    }
     img {
         width: 100%;
     }
 }
-.top-gameList__text {
-    font-size: 1.3rem;
+.top-gameList__date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.1rem;
+    color: $color--white;
     line-height: 1.5;
-    font-weight: bold;
+    text-shadow: 1px 1px 5px $color--black;
+    @media (max-width: 768px) {
+        margin-left: 115px;
+        display: block;
+        margin-bottom: 5px;
+        top: 0;
+        left: 0;
+        color: $color--gray;
+        text-shadow: none;
+    }
+}
+.top-gameList__text {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    right: 10px;
+    font-size: 1.6rem;
+    color: $color--white;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px $color--black;
+    @media (max-width: 768px) {
+        margin-left: 115px;
+        display: block;
+        top: 20px;
+        left: 0;
+        color: $color--black;
+        text-shadow: none;
+        font-size: 1.3rem;
+    }
 }

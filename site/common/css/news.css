@@ -664,132 +664,66 @@ h2.resp-tab-active {
   .br--off {
     display: none; } }
 
-/* about-: ABOUT */
-.about-keyvisual {
-  background: #ffffff url(/common/images/common/noise--03.png);
-  width: 100%; }
-
-.about-keyvisual__content {
-  position: relative;
-  height: 100%; }
-
-.about-header__logo {
-  float: left;
-  margin-top: 30px; }
-  .about-header__logo a {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #000000; }
-
-.about-header__nav {
-  float: right; }
-  .about-header__nav li {
-    float: left;
-    margin-top: 34px;
-    margin-left: 30px; }
-    .about-header__nav li:first-child {
-      margin-left: 0; }
-    @media (max-width: 768px) {
-      .about-header__nav li {
-        float: none;
-        margin-top: 10px;
-        margin-left: 0;
-        text-align: right; }
-        .about-header__nav li:first-child {
-          margin-top: 34px; } }
-
-.about-header__about a {
-  font-size: 1.3rem;
-  color: #000000; }
-
-.about-header__how a {
-  font-size: 1.3rem;
-  color: #000000; }
-
-.about-channel {
-  padding: 60px 30px; }
-  @media (max-width: 768px) {
-    .about-channel {
-      padding: 60px 15px; } }
-
-.about-channel__text {
-  padding: 0 15px;
-  vertical-align: top; }
-  @media (max-width: 768px) {
-    .about-channel__text {
-      margin-left: 0; } }
-
-.about-channel__title {
-  margin-bottom: 15px; }
-
-.about-channel__title__text {
-  vertical-align: middle;
-  font-size: 2.4rem;
-  color: #000000;
-  display: block; }
-
-.about-channel__title__subText {
-  font-size: 1.1rem;
-  font-family: 'Roboto';
-  color: #cccccc;
-  display: block;
-  margin-top: 5px; }
-
-.about-channel__description {
-  font-size: 1.3rem;
-  line-height: 2;
-  margin-bottom: 20px; }
-
-.about-channel__image {
+/* news-: NEWS */
+.news-news__title {
   padding: 0 15px; }
-  .about-channel__image img {
-    width: 100%; }
-
-.about-project {
-  padding: 60px 30px; }
   @media (max-width: 768px) {
-    .about-project {
-      padding: 60px 15px; } }
+    .news-news__title {
+      padding: 0 15px 45px; } }
 
-.about-project__content {
-  width: 100%; }
-
-.about-project__text {
-  padding: 0 15px;
-  vertical-align: top; }
-  @media (max-width: 768px) {
-    .about-project__text {
-      margin-left: 0;
-      display: inline-block; } }
-
-.about-project__title {
-  margin-bottom: 15px; }
-
-.about-project__title__text {
-  vertical-align: middle;
+.news-news__title__text {
   font-size: 2.4rem;
   color: #000000;
-  display: block; }
+  display: block;
+  white-space: nowrap;
+  text-align: left; }
+  @media (max-width: 768px) {
+    .news-news__title__text {
+      text-align: center; } }
 
-.about-project__title__subText {
+.news-news__title__subText {
   font-size: 1.1rem;
   font-family: 'Roboto';
   color: #cccccc;
   display: block;
-  margin-top: 5px; }
-
-.about-project__description {
-  font-size: 1.3rem;
-  line-height: 2;
-  margin-bottom: 20px; }
-
-.about-project__image {
-  width: 300px;
-  padding: 0 15px;
-  vertical-align: top; }
+  margin-top: 5px;
+  text-align: left; }
   @media (max-width: 768px) {
-    .about-project__image {
-      display: inline-block;
-      width: 100%; } }
-  .about-project__image img {
-    width: 100%; }
+    .news-news__title__subText {
+      text-align: center; } }
+
+.news-news__list {
+  padding: 0 15px;
+  width: 100%; }
+  .news-news__list dt {
+    float: left; }
+  .news-news__list dd {
+    margin-left: 80px;
+    margin-bottom: 60px; }
+    @media (max-width: 768px) {
+      .news-news__list dd {
+        margin-bottom: 45px; } }
+    .news-news__list dd:last-child {
+      margin-bottom: 0; }
+  .news-news__list a {
+    display: inline-block;
+    width: 100%;
+    position: relative; }
+    .news-news__list a:hover {
+      opacity: 0.8; }
+  .news-news__list p {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 15px; }
+    .news-news__list p:last-child {
+      margin-bottom: 0; }
+
+.news-newsList__date {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 2.4rem; }
+
+.news-newsList__text a {
+  font-size: 1.3rem;
+  color: #337ab7;
+  line-height: 2; }

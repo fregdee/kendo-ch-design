@@ -53,78 +53,94 @@
         color: $color--black;
     }
 }
+
 .about-channel {
-    background: $color--white url(/common/images/common/noise--03.png);
+    padding: 60px 30px;
+    @media (max-width: 768px) {
+        padding: 60px 15px;
+    }
 }
-.about-channel__content {
-    padding-top: 120px;
-    padding-bottom: 150px;
+.about-channel__text {
+    padding: 0 15px;
+    vertical-align: top;
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
 }
-.about-channel__text {}
 .about-channel__title {
     margin-bottom: 15px;
 }
 .about-channel__title__text {
     vertical-align: middle;
-    font-size: 2.8rem;
-    font-family: "Yu Mincho", "YuMincho";
+    font-size: 2.4rem;
     color: $color--black;
     display: block;
 }
 .about-channel__title__subText {
     font-size: 1.1rem;
     font-family: 'Roboto';
-    font-weight: bold;
-    color: $color--gray--03;
+    color: $color--gray;
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .about-channel__description {
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 .about-channel__image {
-    text-align: right;
+    padding: 0 15px;
     img {
         width: 100%;
     }
 }
 
 .about-project {
-    background: $color--white url(/common/images/common/noise--03.png);
+    padding: 60px 30px;
+    @media (max-width: 768px) {
+        padding: 60px 15px;
+    }
 }
 .about-project__content {
-    padding-bottom: 150px;
+    width: 100%;
 }
-.about-project__text {}
+.about-project__text {
+    padding: 0 15px;
+    vertical-align: top;
+    @media (max-width: 768px) {
+        margin-left: 0;
+        display: inline-block;
+    }
+}
 .about-project__title {
     margin-bottom: 15px;
 }
 .about-project__title__text {
     vertical-align: middle;
-    font-size: 2.8rem;
-    font-family: "Yu Mincho", "YuMincho";
+    font-size: 2.4rem;
     color: $color--black;
     display: block;
 }
 .about-project__title__subText {
     font-size: 1.1rem;
     font-family: 'Roboto';
-    font-weight: bold;
-    color: $color--gray--03;
+    color: $color--gray;
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .about-project__description {
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 .about-project__image {
-    text-align: left;
+    width: 300px;
+    padding: 0 15px;
+    vertical-align: top;
+    @media (max-width: 768px) {
+        display: inline-block;
+        width: 100%;
+    }
     img {
         width: 100%;
     }

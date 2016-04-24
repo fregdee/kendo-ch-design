@@ -1,0 +1,123 @@
+<!-- test -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>剣道チャンネル</title>
+
+    <!-- style -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="/common/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">
+    <link href="/common/css/about.css" rel="stylesheet">
+    <!-- /style -->
+
+</head>
+<body id="about">
+
+    <header class="mod-header">
+        <div class="mod-logo"><a href="/">剣道チャンネル</a></div>
+        <div class="dropdown mod-nav">
+            <button class="mod-nav_button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                メニュー
+            </button>
+            <ul class="mod-nav_menu dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="mod-nav__about"><a href="/about.html">このサイトについて</a></li>
+                <li class="mod-nav__how"><a id="how__link" href="#animatedModal">ご利用方法</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="about-channel">
+        <div class="about-channel__text">
+            <h2 class="about-channel__title">
+                <span class="about-channel__title__text">剣道チャネルとは</span>
+                <span class="about-channel__title__subText">ABOUT KENDO-CH</span>
+            </h2>
+            <p class="about-channel__description">剣道ファンのための剣道動画サービスです。<br class="br--off">観たい試合が簡単、確実に見つかります。<br class="br--off">オンラインでこそ実現できるインタラクティブ（双方向）な体験をお楽しみください。</p>
+        </div>
+        <div class="about-channel__image">
+            <img src="http://placehold.it/1920x800" alt="">
+        </div>
+    </section>
+
+    <section class="about-project">
+        <table class="about-project__content">
+            <tr>
+                <th class="about-project__text">
+                    <h2 class="about-project__title">
+                        <span class="about-project__title__text">剣道チャネルプロジェクト</span>
+                        <span class="about-project__title__subText">KENDO-CH PROJECT</span>
+                    </h2>
+                    <p class="about-project__description">Kendo-chは、オンラインでの試合観戦をよりインタラクティブな体験に変えるプロジェクトです。これまでの動画サービスで、情報の集積と閲覧環境の整備により欲しい時に欲しい動画にアクセスできる環境が整いつつあります。しかし、「オンラインで動画が観れる」に留まり、「試合観戦」という体験をオンライン上で拡張するには至っていません。本プロジェクトでは現在の「試合観戦」という体験を、各コンテンツを形ある体験として再構築することで、試合観戦の新たな楽しみ方を追求します。</p>
+                </th>
+                <td class="about-project__image">
+                    <img src="http://placehold.it/460x460" alt="">
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer class="mod-footer clearfix">
+        <small class="mod-footer__copyright">&copy;kendo-ch.net</small>
+    </footer>
+
+    <div id="animatedModal">
+        <div class="animatedModal__content">
+            <div class="close-animatedModal">
+                <img src="/common/images/common/icon__close.png" alt="close">
+            </div>
+            <div class="modal-content">
+                <h2 class="modal__title">
+                    <span class="modal__title__text">ご利用方法</span>
+                    <span class="modal__title__subText">HOW TO USE</span>
+                </h2>
+                <ul class="modal__list row">
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">1</span>
+                            <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">大会の選択</span>
+                            <span class="modalList__description">大会一覧から<br>大会をお選びください。</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">2</span>
+                            <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">試合の選択</span>
+                            <span class="modalList__description">各トーナメント表から<br>試合をお選びください。</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">3</span>
+                            <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">動画の再生</span>
+                            <span class="modalList__description">動画内をクリックしますと<br>各試合をご観戦頂けます。</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/common/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script src="/common/plugins/animatedModal/animatedModal.min.js"></script>
+    <script src="/common/js/plugins.js"></script>
+    <script src="/common/js/style.js"></script>
+    <!-- /script -->
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+@import '_style.scss';
+
+// TOURNAMENT
+
+/* tournament-: TOURNAMENT */
+
+.tournament-navArea {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+.tournament-nav__content {
+    text-align: center;
+    position: relative;
+}
+.tournament-nav__list {
+    display: inline-block;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    @media (max-width: 768px) {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -1px;
+            width: 15px;
+            height: 100%;
+            background: -moz-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1));
+            background: -webkit-gradient(linear, right top, left top, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+            z-index: 1;
+            display: inline-block;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1px;
+            width: 15px;
+            height: 100%;
+            background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1));
+            background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+            z-index: 1;
+            display: inline-block;
+        }
+    }
+    &::-webkit-scrollbar {
+        overflow:hidden;
+        width:1px;
+        background:#fafafa;
+    }
+    &::-webkit-scrollbar:vertical {
+        display: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+        height:1px;
+    }
+    &::-webkit-scrollbar-button {
+        display:none;
+    }
+    &::-webkit-scrollbar-piece {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-piece:start {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color--black;
+    }
+    &::-webkit-scrollbar-corner {
+        background: $color--black;
+    }
+    li {
+        display: inline-block;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1;
+        float: none;
+    }
+    a {
+        font-size: 1.3rem;
+        color: $color--black;
+        &:hover {
+            color: $color--gray;
+        }
+    }
+}
+.tournament-table {
+    background: $color--white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tournament-tableArea {
+    padding-bottom: 150px;
+}
+.tournament-table__content {
+    position: relative;
+    text-align: center;
+}
+.tournament-table__round--01,
+.tournament-table__round--02,
+.tournament-table__round--03,
+.tournament-table__round--04 {
+    td {
+        position: relative;
+    }
+}
+.tournament-table__play {
+    position: absolute;
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid $color--gray;
+    background: $color--white;
+    z-index: 1;
+    &:hover {
+        background: $color--gray;
+    }
+}
+.tournament-tableContentArea {
+    line-height: 0;
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 15px;
+        height: 100%;
+        background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1));
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+        z-index: 1;
+        display: inline-block;
+    }
+}
+.tournament-tableContent {
+    display: block;
+    position: relative;
+}
+.tournament-table__head {
+    display: block;
+    float: left;
+    letter-spacing: -.4em;
+}
+.tournament-table__body {
+    display: block;
+    position: relative;
+    width: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    letter-spacing: -.4em;
+    padding-bottom: 10px;
+    &::-webkit-scrollbar {
+        overflow: hidden;
+        width: 1px;
+        background: #fafafa;
+    }
+    &::-webkit-scrollbar:vertical {
+        display: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+        height: 1px;
+    }
+    &::-webkit-scrollbar-button {
+        display:none;
+    }
+    &::-webkit-scrollbar-piece {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-piece:start {
+        background: $color--gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color--black;
+    }
+    &::-webkit-scrollbar-corner {
+        background: $color--black;
+    }
+}
+.tournament-tableContent--result {
+    display: none;
+}
+.tournament-table__num,
+.tournament-table__name,
+.tournament-table__round--01,
+.tournament-table__round--02,
+.tournament-table__round--03,
+.tournament-table__round--04,
+.tournament-table__round--05,
+.tournament-table__round--result {
+    display: inline-block;
+    letter-spacing: normal;
+    td {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+.tournament-table__num {
+    td {
+        height: 30px;
+        padding-right: 10px;
+    }
+    span {
+        color: $color--white;
+        background: $color--black;
+        font-size: 1.1rem;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+}
+.tournament-table__name {
+    td {
+        height: 30px;
+        padding-right: 10px;
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+}
+.tournament-table__round--01 {
+    td {
+        height: 60px;
+    }
+}
+.tournament-table__round--02 {
+    td {
+        height: 120px;
+    }
+}
+.tournament-table__round--03 {
+    td {
+        height: 240px;
+    }
+}
+.tournament-table__round--04 {
+    td {
+        height: 480px;
+    }
+}
+.tournament-table__round--05 {
+    td {
+        height: 480px;
+    }
+}
+.tournament-table__round--result {
+    td {
+        width: 200px;
+        height: 480px;
+        line-height: 2;
+        white-space: nowrap;
+    }
+}
+.tournament-table__round--result__tag {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    background: $color--red;
+    color: $color--white;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 1;
+}
+.tournament-table__round--result__text {
+    font-size: 1.1rem;
+}
+.tournament-table__button {
+    a {
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        background: none;
+        color: #000000;
+        padding: 5px 20px;
+        white-space: nowrap;
+        line-height: 1.4;
+        display: inline-block;
+        &:hover {
+            color: $color--gray--04;
+        }
+    }
+}

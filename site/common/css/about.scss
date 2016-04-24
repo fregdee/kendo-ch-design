@@ -1,0 +1,147 @@
+@import '_style.scss';
+
+// TOP
+
+/* about-: ABOUT */
+
+.about-keyvisual {
+    background: $color--white url(/common/images/common/noise--03.png);
+    width: 100%;
+}
+.about-keyvisual__content {
+    position: relative;
+    height: 100%;
+}
+.about-header__logo {
+    float: left;
+    margin-top: 30px;
+    a {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $color--black;
+    }
+}
+.about-header__nav {
+    float: right;
+    li {
+        float: left;
+        margin-top: 34px;
+        margin-left: 30px;
+        &:first-child {
+            margin-left: 0;
+        }
+        @media (max-width: 768px) {
+            float: none;
+            margin-top: 10px;
+            margin-left: 0;
+            text-align: right;
+            &:first-child {
+                margin-top: 34px;
+            }
+        }
+    }
+}
+.about-header__about {
+    a {
+        font-size: 1.3rem;
+        color: $color--black;
+    }
+}
+.about-header__how {
+    a {
+        font-size: 1.3rem;
+        color: $color--black;
+    }
+}
+
+.about-channel {
+    padding: 60px 30px;
+    @media (max-width: 768px) {
+        padding: 60px 15px;
+    }
+}
+.about-channel__text {
+    padding: 0 15px;
+    vertical-align: top;
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+.about-channel__title {
+    margin-bottom: 15px;
+}
+.about-channel__title__text {
+    vertical-align: middle;
+    font-size: 2.4rem;
+    color: $color--black;
+    display: block;
+}
+.about-channel__title__subText {
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    color: $color--gray;
+    display: block;
+    margin-top: 5px;
+}
+.about-channel__description {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.about-channel__image {
+    padding: 0 15px;
+    img {
+        width: 100%;
+    }
+}
+
+.about-project {
+    padding: 60px 30px;
+    @media (max-width: 768px) {
+        padding: 60px 15px;
+    }
+}
+.about-project__content {
+    width: 100%;
+}
+.about-project__text {
+    padding: 0 15px;
+    vertical-align: top;
+    @media (max-width: 768px) {
+        margin-left: 0;
+        display: inline-block;
+    }
+}
+.about-project__title {
+    margin-bottom: 15px;
+}
+.about-project__title__text {
+    vertical-align: middle;
+    font-size: 2.4rem;
+    color: $color--black;
+    display: block;
+}
+.about-project__title__subText {
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    color: $color--gray;
+    display: block;
+    margin-top: 5px;
+}
+.about-project__description {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.about-project__image {
+    width: 300px;
+    padding: 0 15px;
+    vertical-align: top;
+    @media (max-width: 768px) {
+        display: inline-block;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}

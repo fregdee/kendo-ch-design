@@ -1,0 +1,27 @@
+// BACKGROUND
+
+.noise {
+  animation: noise_anima 1s steps(10) infinite;
+}
+@keyframes noise_anima {
+  from { background-position: 0 0; }
+  to { background-position: 123px 456px; }
+}
+@-webkit-keyframes noise_anima {
+  from { background-position: 0 0; }
+  to { background-position: 123px 456px; }
+}
+
+// BR
+
+.br--on {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.br--off {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

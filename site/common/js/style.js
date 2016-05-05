@@ -31,5 +31,10 @@ $(function(){
 
 var wH = $(window).height();
 $(function(){
-  $('.resize-height').css('height',wH+'px');
+    $('.resize-height').css('height',wH+'px');
+});
+
+var wH = $(window).height();
+$(function(){
+    $('.top-keyvisual, .mod-main__content, .mod-main__info, .about-channel, .about-project').css('height',wH-130+'px');
 });

@@ -211,7 +211,7 @@
     }
     span {
         color: $color--white;
-        background: $color--black;
+        background: $color--navy;
         font-size: 1.1rem;
         width: 20px;
         height: 20px;
@@ -286,7 +286,7 @@
         line-height: 1.4;
         display: inline-block;
         &:hover {
-            color: $color--gray--04;
+            color: $color--gray;
         }
     }
 }

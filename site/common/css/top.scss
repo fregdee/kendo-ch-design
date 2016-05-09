@@ -9,91 +9,17 @@
 }
 .top-keyvisual {
     position: relative;
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background: url(/common/images/common/noise--05.png);
-        animation: noise_anima 1s steps(10) infinite;
-        z-index: 0;
+}
+.top-bg {
+    width: 100%;
+    height: 550px;
+    @media (max-width: 768px) {
+        height: 350px;
     }
 }
 .top-image {
     width: 100%;
     position: relative;
-}
-.top-logo {
-    position: absolute;
-    top: 34px;
-    left: 45px;
-    line-height: 1;
-    z-index: 1;
-    @media (max-width: 768px) {
-        left: 30px;
-    }
-    a {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: $color--white;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-}
-.top-nav {
-    position: absolute;
-    top: 30px;
-    right: 45px;
-    z-index: 10;
-    @media (max-width: 768px) {
-        top: 30px;
-        right: 30px;
-    }
-}
-.top-nav_button {
-    border: 1px solid $color--white;
-    border-radius: 4px;
-    background: none;
-    color: $color--white;
-    padding: 5px 20px;
-    white-space: nowrap;
-    &:hover {
-        opacity: 0.8;
-    }
-}
-.top-nav_menu {
-    left: auto;
-    right: 0;
-    margin-top: 10px;
-    padding: 10px 0;
-    border: 1px solid $color--white;
-    border-radius: 0;
-    box-shadow: none;
-}
-.top-nav__about {
-    a {
-        font-size: 1.1rem;
-        color: $color--white;
-        padding: 5px 20px !important;
-        &:hover {
-            background: none !important;
-            color: $color--gray--04 !important;
-        }
-    }
-}
-.top-nav__how {
-    a {
-        font-size: 1.1rem;
-        color: $color--white;
-        padding: 5px 20px !important;
-        &:hover {
-            background: none !important;
-            color: $color--gray--04 !important;
-        }
-    }
 }
 .top-title {
     position: absolute;
@@ -103,22 +29,65 @@
     text-align: center;
     width: 100%;
     z-index: 1;
-    @media (max-width: 768px) {
-        margin-top: 28px;
-    }
 }
 .top-title__catchcopy {
     font-size: 3.2rem;
     line-height: 1.5;
-    color: $color--white;
+    color: $color--black;
     @media (max-width: 768px) {
         font-size: 2.2rem;
     }
 }
-.top-news {
-    padding: 30px;
+.top-arrow {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 0;
     @media (max-width: 768px) {
-        padding: 40px 15px;
+        bottom: 30px;
+    }
+    a {
+        width: 60px;
+        height: 21px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            border-top: 20px solid $color--black;
+            border-bottom: 20px solid transparent;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            top: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            border-top: 20px solid $color--white;
+            border-bottom: 20px solid transparent;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:hover {
+            &:before {
+                border-top: 20px solid $color--gray;
+            }
+        }
+    }
+}
+.top-news {
+    padding: 60px 30px;
+    width: 100%;
+    background: $color--gray--02;
+    @media (max-width: 768px) {
+        padding: 60px 15px;
     }
 }
 .top-news__table {
@@ -132,7 +101,7 @@
             display: block;
             border-right: none;
             width: 100%;
-            padding: 0 30px 30px;
+            padding: 0 15px 45px;
         }
     }
     td {
@@ -179,33 +148,29 @@
             margin-bottom: 0;
         }
     }
-    a {
-        display: inline-block;
-        width: 100%;
-        position: relative;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
 }
 .top-newsList__date {
     font-size: 1.1rem;
     color: $color--gray;
+    line-height: 1.8rem;
 }
 .top-newsList__text {
     a {
         font-size: 1.3rem;
-        color: $color--blue;
+        border-bottom: 1px solid $color--black;
+        display: inline;
+        &:hover {
+            border-bottom: none;
+        }
     }
 }
+
 .top-game {
-    padding: 30px;
+    padding: 60px 30px;
     @media (max-width: 768px) {
-        padding: 40px 15px;
+        padding: 60px 15px;
     }
 }
-
-
 .top-game__table {
     width: 100%;
     th {
@@ -217,7 +182,7 @@
             display: block;
             border-right: none;
             width: 100%;
-            padding: 0 30px 30px;
+            padding: 0 15px 45px;
         }
     }
     td {
@@ -253,92 +218,25 @@
     margin-top: -15px;
     margin-bottom: -15px;
     li {
-        padding: 15px;
-        line-height: 0;
-    }
-    a {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        border-radius: 2px;
-    }
-}
-.top-gameList__tag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5px 15px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: $color--white;
-    background: $color--red;
-    display: inline-block;
-    @media (max-width: 768px) {
-        padding: 5px 10px;
-    }
-}
-.top-gameList__image {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        z-index: 1;
-    }
-    &:hover {
-        &:after {
-            background: rgba(0,0,0,0.1);
-        }
-    }
-    @media (max-width: 768px) {
-        float: left;
-        width: 100px;
-        margin-bottom: 0;
-    }
-    img {
-        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 .top-gameList__date {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     font-size: 1.1rem;
-    color: $color--white;
-    line-height: 1.5;
-    text-shadow: 1px 1px 5px $color--black;
-    @media (max-width: 768px) {
-        margin-left: 115px;
-        display: block;
-        margin-bottom: 5px;
-        top: 0;
-        left: 0;
-        color: $color--gray;
-        text-shadow: none;
-    }
+    color: $color--gray;
+    margin-top: 5px;
+    display: block;
 }
 .top-gameList__text {
-    position: absolute;
-    top: 28px;
-    left: 10px;
-    right: 10px;
-    font-size: 1.6rem;
-    color: $color--white;
-    line-height: 1.5;
-    text-shadow: 1px 1px 5px $color--black;
-    @media (max-width: 768px) {
-        margin-left: 115px;
-        display: block;
-        top: 20px;
-        left: 0;
-        color: $color--black;
-        text-shadow: none;
-        font-size: 1.3rem;
+    width: 100%;
+    display: block;
+    a {
+        font-size: 2.2rem;
+        border-bottom: 1px solid $color--black;
+        display: inline;
+        &:hover {
+            border-bottom: none;
+        }
     }
 }

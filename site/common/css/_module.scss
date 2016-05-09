@@ -1,14 +1,15 @@
 // COLOR
 
 $color--black: #000000;
+$color--black--02: #333333;
 $color--white: #ffffff;
-$color--navy: #0f2540;
+$color--navy: #36465e;
+$color--navy--02: #2e3c51;
+$color--navy--03: #86909f;
 $color--red: #cb1b45;
 $color--blue: #337ab7;
 $color--gray: #cccccc;
-$color--gray--02: #eeeeee;
-$color--gray--03: #666666;
-$color--gray--04: #999999;
+$color--gray--02: #f7f7f7;
 
 // MODULE
 
@@ -24,12 +25,18 @@ $color--gray--04: #999999;
 .mod-header {
     width: 100%;
     height: 90px;
-    position: relative;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $color--navy;
 }
 .mod-logo {
     position: absolute;
-    top: 34px;
+    top: 50%;
     left: 45px;
+    transform: translateY(-50%);
     line-height: 1;
     z-index: 1;
     @media (max-width: 768px) {
@@ -38,31 +45,30 @@ $color--gray--04: #999999;
     a {
         font-size: 1.8rem;
         font-weight: bold;
-        color: $color--black;
-        &:hover {
-            opacity: 0.8;
-        }
+        color: $color--white;
     }
 }
 .mod-nav {
     position: absolute;
-    top: 30px;
+    top: 50%;
     right: 45px;
+    transform: translateY(-50%);
     z-index: 10;
     @media (max-width: 768px) {
-        top: 30px;
         right: 30px;
     }
 }
 .mod-nav_button {
-    border: 1px solid $color--gray;
+    border: 1px solid $color--navy--03;
     border-radius: 4px;
     background: none;
-    color: $color--black;
+    color: $color--white;
     padding: 5px 20px;
     white-space: nowrap;
+    background: $color--navy--03;
     &:hover {
-        color: $color--gray--04;
+        background: $color--navy--02;
+        border-color: $color--navy--02;
     }
 }
 .mod-nav_menu {
@@ -81,7 +87,7 @@ $color--gray--04: #999999;
         padding: 5px 20px !important;
         &:hover {
             background: none !important;
-            color: $color--gray--04 !important;
+            color: $color--gray !important;
         }
     }
 }
@@ -92,7 +98,7 @@ $color--gray--04: #999999;
         padding: 5px 20px !important;
         &:hover {
             background: none !important;
-            color: $color--gray--04 !important;
+            color: $color--gray !important;
         }
     }
 }
@@ -101,35 +107,37 @@ $color--gray--04: #999999;
 
 .mod-main {
     position: relative;
-}
-.mod-tableArea {
-    padding: 60px 30px;
+    margin-top: 90px;
+    margin-bottom: 40px;
     @media (max-width: 768px) {
-        padding: 60px 15px;
+        margin-bottom: 0;
     }
 }
-.mod-table {
-    width: 100%;
-    display: table;
-    @media (max-width: 768px) {
-        display: inline-block;
-    }
-}
-.mod-table__info {
-    display: table-cell;
+.mod-main__info {
     vertical-align: top;
     width: 300px;
+    float: left;
+    padding: 45px;
+    background: $color--gray--02;
+    overflow: scroll;
     @media (max-width: 768px) {
         display: inline-block;
         width: 100%;
+        padding: 30px;
+        height: auto !important;
     }
 }
-.mod-table__main {
+.mod-main__content {
     vertical-align: top;
-    display: table-cell;
+    padding: 45px;
+    overflow: scroll;
+    margin-left: 300px;
     @media (max-width: 768px) {
         display: inline-block;
         width: 100%;
+        padding: 30px;
+        height: auto !important;
+        margin-left: 0;
     }
 }
 
@@ -137,22 +145,47 @@ $color--gray--04: #999999;
 
 .mod-footer {
     width: 100%;
-    padding: 30px 45px;
+    height: 40px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $color--navy--03;
     @media (max-width: 768px) {
+        position: static;
         padding: 30px;
+        height: auto;
     }
 }
 .mod-footer__copyright {
+    position: absolute;
+    top: 50%;
+    right: 45px;
+    transform: translateY(-50%);
     font-size: 1.1rem;
     font-family: 'Roboto';
     float: left;
     overflow: hidden;
+    color: $color--white;
+    @media (max-width: 768px) {
+        position: static;
+        transform: none;
+    }
 }
 
 // PANKUZU
 
 .mod-pankuzu {
-    margin-bottom: 15px;
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    @media (max-width: 768px) {
+        position: static;
+        transform: none;
+        margin-bottom: 15px;
+    }
     li {
         float: left;
     }
@@ -160,16 +193,19 @@ $color--gray--04: #999999;
         font-size: 1.1rem;
         vertical-align: middle;
         line-height: 2;
+        color: $color--white;
+        border-bottom: 1px solid $color--white;
+        display: inline;
         &:hover {
-            color: $color--gray--04;
+            border-bottom: none;
         }
     }
 }
 .mod-pankuzu__text {
-    color: $color--gray--04;
     font-size: 1.1rem;
     vertical-align: middle;
     line-height: 2;
+    color: $color--white;
 }
 .mod-pankuzu__icon {
     vertical-align: middle;
@@ -178,16 +214,12 @@ $color--gray--04: #999999;
     margin-right: 10px;
     float: left;
     line-height: 2;
+    color: $color--white;
 }
 
 // KEYVISUAL
 
-.mod-keyvidual {
-    padding: 0 15px;
-    @media (max-width: 768px) {
-        padding: 0 15px;
-    }
-}
+.mod-keyvidual {}
 .mod-keyvidual__title {
     color: $color--black;
     font-size: 2.4rem;

@@ -18,182 +18,216 @@
 </head>
 <body id="playIndividual" class="mod-body">
 
-    <div class="mod-content">
-
-        <header class="mod-header">
-            <div class="mod-logo"><a href="/">剣道チャンネル</a></div>
-            <div class="dropdown mod-nav">
-                <button class="mod-nav_button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    メニュー
-                </button>
-                <ul class="mod-nav_menu dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="mod-nav__about"><a href="/about.html">このサイトについて</a></li>
-                    <li class="mod-nav__how"><a id="how__link" href="#animatedModal">ご利用方法</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <main class="mod-main">
-
-            <section class="mod-tableArea">
-                <div class="mod-table">
-
-                    <div class="mod-table__info">
-                        <div class="mod-keyvidual">
-                            <div class="mod-keyvidual__content">
-                                <h1 class="mod-keyvidual__title">
-                                    <span class="mod-keyvidual__title__times">第16回</span>世界剣道選手権大会
-                                </h1>
-                                <div class="mod-keyvidual__info clearfix">
-                                    <div class="mod-keyvidual__date clearfix">
-                                        <span class="mod-keyvidual__date__text">2016.02.10</span>
-                                    </div>
-                                    <div class="mod-keyvidual__place clearfix">
-                                        <span class="mod-keyvidual__place__text">日本武道館</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mod-table__main">
-                        <div class="play-video">
-                            <div class="play-videoArea">
-
-                                <div class="play-video__info">
-                                    <div class="play-video__title">
-                                        <div class="play-video__title__player">
-                                            <span class="play-video__title__red"></span>
-                                            <span class="play-video__title__name">山田太郎 (神奈川県警)</span>
-                                        </div>
-                                        <i class="play-video__title__icon material-icons">close</i>
-                                        <div class="play-video__title__player">
-                                            <span class="play-video__title__white"></span>
-                                            <span class="play-video__title__name">山田太郎 (神奈川県警)</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="play-video__videoContent">
-                                    <div class="play-video__video">
-                                        <iframe width="640" height="360" src="https://www.youtube.com/embed/PI4W4T_gU08?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-
-                                <div class="play-video__resultArea">
-
-                                    <ul class="nav nav-tabs">
-                                        <li class="play-video__result--per">
-                                            <a href="#mod-resultTableContent" data-toggle="tab">試合結果</a>
-                                        </li>
-                                    </ul>
-
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade" id="mod-resultTableContent">
-                                            <table class="mod-resultTable">
-                                                <tr>
-                                                    <th class="mod-resultTable__player">
-                                                        <span class="mod-resultTable__player__red"></span>
-                                                        <span class="mod-resultTable__player__name">山田太郎 (神奈川県警)</span>
-                                                    </th>
-                                                    <td class="mod-resultTable__point">面</td>
-                                                    <td class="mod-resultTable__point"></td>
-                                                    <td class="mod-resultTable__point mod-resultTable__point--last">小手</td>
-                                                    <td class="mod-resultTable__judge">
-                                                        <span class="mod-resultTable__judge__mark--red"></span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="mod-resultTable__player">
-                                                        <span class="mod-resultTable__player__white"></span>
-                                                        <span class="mod-resultTable__player__name">山田太郎 (神奈川県警)</span>
-                                                    </th>
-                                                    <td class="mod-resultTable__point"></td>
-                                                    <td class="mod-resultTable__point">胴</td>
-                                                    <td class="mod-resultTable__point mod-resultTable__point--last"></td>
-                                                    <td class="mod-resultTable__judge"></td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="mod-footer clearfix">
-            <ul class="mod-pankuzu clearfix">
-                <li><a class="mod-pankuzu__link" href="/">トップページ</a></li>
-                <i class="mod-pankuzu__icon material-icons">keyboard_arrow_right</i>
-                <li><a class="mod-pankuzu__link" href="/tournament/tournament.html">大会ページ</a></li>
-                <i class="mod-pankuzu__icon material-icons">keyboard_arrow_right</i>
-                <li><span class="mod-pankuzu__text">試合動画</span></li>
+    <header class="mod-header">
+        <div class="mod-logo"><a href="/">剣道チャンネル</a></div>
+        <div class="dropdown mod-nav">
+            <button class="mod-nav_button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                メニュー
+            </button>
+            <ul class="mod-nav_menu dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="mod-nav__about"><a href="/about.html">このサイトについて</a></li>
+                <li class="mod-nav__how"><a id="how__link" href="#animatedModal">ご利用方法</a></li>
             </ul>
-            <small class="mod-footer__copyright">&copy;kendo-ch.net</small>
-        </footer>
+        </div>
+    </header>
 
-        <div id="animatedModal">
-            <div class="animatedModal__content">
-                <div class="close-animatedModal">
-                    <img src="/common/images/common/icon__close.png" alt="close">
-                </div>
-                <div class="modal-content">
-                    <h2 class="modal__title">
-                        <span class="modal__title__text">ご利用方法</span>
-                        <span class="modal__title__subText">HOW TO USE</span>
-                    </h2>
-                    <ul class="modal__list row">
-                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="modalList__position">
-                                <span class="modalList__num">1</span>
-                                <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
-                            </div>
-                            <div class="modalList__text">
-                                <span class="modalList__title">大会の選択</span>
-                                <span class="modalList__description">大会一覧から<br>大会をお選びください。</span>
-                            </div>
-                        </li>
-                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="modalList__position">
-                                <span class="modalList__num">2</span>
-                                <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
-                            </div>
-                            <div class="modalList__text">
-                                <span class="modalList__title">試合の選択</span>
-                                <span class="modalList__description">各トーナメント表から<br>試合をお選びください。</span>
-                            </div>
-                        </li>
-                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="modalList__position">
-                                <span class="modalList__num">3</span>
-                                <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
-                            </div>
-                            <div class="modalList__text">
-                                <span class="modalList__title">動画の再生</span>
-                                <span class="modalList__description">動画内をクリックしますと<br>各試合をご観戦頂けます。</span>
-                            </div>
-                        </li>
-                    </ul>
+    <main class="mod-main clearfix">
+        <div class="mod-main__info">
+            <div class="mod-keyvidual">
+                <div class="mod-keyvidual__content">
+                    <h1 class="mod-keyvidual__title">
+                        <span class="mod-keyvidual__title__times">第16回</span>世界剣道選手権大会
+                    </h1>
+                    <div class="mod-keyvidual__info clearfix">
+                        <div class="mod-keyvidual__date clearfix">
+                            <span class="mod-keyvidual__date__text">2016.02.10</span>
+                        </div>
+                        <div class="mod-keyvidual__place clearfix">
+                            <span class="mod-keyvidual__place__text">日本武道館</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div><!-- /.mod-content -->
+        <div class="mod-main__content">
+            <div class="play-video">
+                <div class="play-videoArea">
+
+                    <div class="play-video__info">
+                        <div class="play-video__title">
+                            <div class="play-video__title__player">
+                                <span class="play-video__title__red"></span>
+                                <span class="play-video__title__name">山田太郎 (神奈川県警)</span>
+                            </div>
+                            <i class="play-video__title__icon material-icons">close</i>
+                            <div class="play-video__title__player">
+                                <span class="play-video__title__white"></span>
+                                <span class="play-video__title__name">山田太郎 (神奈川県警)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="play-video__videoContent">
+                        <div class="play-video__video">
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/PI4W4T_gU08?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="play-video__resultArea">
+
+                        <ul class="nav nav-tabs">
+                            <li class="play-video__result--per">
+                                <a href="#mod-resultTableContent" data-toggle="tab">試合結果</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="mod-resultTableContent">
+                                <table class="mod-resultTable">
+                                    <tr>
+                                        <th class="mod-resultTable__player">
+                                            <span class="mod-resultTable__player__red"></span>
+                                            <span class="mod-resultTable__player__name">山田太郎 (神奈川県警)</span>
+                                        </th>
+                                        <td class="mod-resultTable__point">面</td>
+                                        <td class="mod-resultTable__point"></td>
+                                        <td class="mod-resultTable__point mod-resultTable__point--last">小手</td>
+                                        <td class="mod-resultTable__judge">
+                                            <span class="mod-resultTable__judge__mark--red"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="mod-resultTable__player">
+                                            <span class="mod-resultTable__player__white"></span>
+                                            <span class="mod-resultTable__player__name">山田太郎 (神奈川県警)</span>
+                                        </th>
+                                        <td class="mod-resultTable__point"></td>
+                                        <td class="mod-resultTable__point">胴</td>
+                                        <td class="mod-resultTable__point mod-resultTable__point--last"></td>
+                                        <td class="mod-resultTable__judge"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mod-footer clearfix">
+        <ul class="mod-pankuzu clearfix">
+            <li><a class="mod-pankuzu__link" href="/">トップページ</a></li>
+            <i class="mod-pankuzu__icon material-icons">keyboard_arrow_right</i>
+            <li><a class="mod-pankuzu__link" href="/tournament/tournament.html">大会ページ</a></li>
+            <i class="mod-pankuzu__icon material-icons">keyboard_arrow_right</i>
+            <li><span class="mod-pankuzu__text">試合動画</span></li>
+        </ul>
+        <small class="mod-footer__copyright">&copy;kendo-ch.net</small>
+    </footer>
+
+    <div id="animatedModal">
+        <div class="animatedModal__content">
+            <div class="close-animatedModal">
+                <img src="/common/images/common/icon__close.png" alt="close">
+            </div>
+            <div class="modal-content">
+                <h2 class="modal__title">
+                    <span class="modal__title__text">ご利用方法</span>
+                    <span class="modal__title__subText">HOW TO USE</span>
+                </h2>
+                <ul class="modal__list row">
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">1</span>
+                            <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">大会の選択</span>
+                            <span class="modalList__description">大会一覧から<br>大会をお選びください。</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">2</span>
+                            <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">試合の選択</span>
+                            <span class="modalList__description">各トーナメント表から<br>試合をお選びください。</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">3</span>
+                            <span class="modalList__image"><img src="http://placehold.it/150x150/ffffff" alt="第63回全日本剣道選手権大会"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">動画の再生</span>
+                            <span class="modalList__description">動画内をクリックしますと<br>各試合をご観戦頂けます。</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="animatedModal">
+        <div class="animatedModal__content">
+            <div class="close-animatedModal">
+                <img src="/common/images/common/icon__close.png" alt="close">
+            </div>
+            <div class="modal-content">
+                <h2 class="modal__title">
+                    <span class="modal__title__text">ご利用方法</span>
+                    <span class="modal__title__subText">HOW TO USE</span>
+                </h2>
+                <ul class="modal__list row">
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">1</span>
+                            <span class="modalList__image"><img src="/common/images/common/image__how--01.png" alt="大会の選択"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">大会の選択</span>
+                            <span class="modalList__description">大会一覧から<br>大会をお選びください。</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">2</span>
+                            <span class="modalList__image"><img src="/common/images/common/image__how--02.png" alt="試合の選択"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">試合の選択</span>
+                            <span class="modalList__description">各トーナメント表から<br>試合をお選びください。</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="modalList__position">
+                            <span class="modalList__num">3</span>
+                            <span class="modalList__image"><img src="/common/images/common/image__how--03.png" alt="動画の再生"></span>
+                        </div>
+                        <div class="modalList__text">
+                            <span class="modalList__title">動画の再生</span>
+                            <span class="modalList__description">動画内をクリックしますと<br>各試合をご観戦頂けます。</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- / #animatedModal -->
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/common/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script src="/common/plugins/animatedModal/animatedModal.min.js"></script>
     <script src="/common/plugins/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js"></script>
-    <script src="/common/js/plugins.js"></script>
     <script src="/common/js/style.js"></script>
+    <script src="/common/js/plugins.js"></script>
     <!-- /script -->
 
 </body>

@@ -5,10 +5,10 @@
     height: 100%;
 }
 .close-animatedModal {
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 45px;
-    z-index: 100;
+    z-index: 10000;
     @media (max-width: 768px) {
         right: 30px;
     }
@@ -33,21 +33,30 @@
     }
 }
 .modal__title {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-align: center;
+    @media (max-width: 768px) {
+        margin-bottom: 15px;
+    }
 }
 .modal__title__text {
     vertical-align: middle;
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: $color--black;
     display: block;
+    @media (max-width: 768px) {
+        font-size: 2.4rem;
+    }
 }
 .modal__title__subText {
     font-size: 1.1rem;
     font-family: 'Roboto';
     color: $color--gray;
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
+    @media (max-width: 768px) {
+        margin-top: 5px;
+    }
 }
 .modal__list {
     width: 720px;
@@ -73,18 +82,18 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: $color--navy;
     color: $color--white;
     font-size: 1.6rem;
     font-weight: bold;
     display: inline-block;
     border-radius: 50%;
+    background: $color--navy;
 }
 .modalList__image {
     display: block;
     width: 150px;
     height: 150px;
-    border: 1px solid $color--gray;
+    border: 1px solid $color--navy;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
@@ -115,10 +124,8 @@
 #parentHorizontalTab {
     background: $color--white;
     text-align: center;
-    padding: 0 15px;
     @media (max-width: 768px) {
         border-bottom: none;
-        padding: 60px 15px 0;
     }
 }
 .resp-tab-content {
@@ -160,7 +167,7 @@ h2.resp-tab-active {
         font-weight: normal;
         font-size: 1.1rem;
         &:hover {
-            color: $color--gray--04;
+            color: $color--gray;
         }
     }
 }
